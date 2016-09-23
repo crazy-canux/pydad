@@ -1,3 +1,3 @@
 # Authors
 
-* [Canux CHENG](canuxcheng@gmail.com) <https://github.com/crazy-canux>
+* [Canux CHENG](http://crazy-canux.github.io/) <canuxcheng@gmailcom>
