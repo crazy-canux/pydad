@@ -1,2 +1,2 @@
-*.py linguist-language=C
-*.java linguist-language=C
+*.c linguist-language=py
+*.java linguist-language=py
