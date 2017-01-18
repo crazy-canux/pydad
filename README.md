@@ -1,10 +1,12 @@
 # About
 
-This is a package of algorithm.
+This is a package of algorithm written in python.
 
-Trying to use lots of languages to implementation.
+研究python相关的高级知识,包括数据结构和算法,软件工程等.
 
-## sort algorithm
+***
+
+# sort algorithm
 
 * selection sort(选择排序)
 
@@ -34,7 +36,9 @@ Trying to use lots of languages to implementation.
 
 * bucket/radix sort(桶式排序/基数排序)
 
-## search algorithm
+***
+
+# search algorithm
 
 * order search(顺序查找/线性查找)
 
@@ -51,23 +55,12 @@ Trying to use lots of languages to implementation.
     如果min>=max那么没有找到。
     依次类推，每次将数组一分为二。
 
-* (分块查找)
+* block search(分块查找)
 
-* (哈希查找)
+* hash search(哈希查找)
 
-# How to install
-
-Just use git clone to copy the source code.
-
-# How to use
-
-Run the program by it's own rules of the language.
+***
 
 # TODO
 
-language:
-1. C
-2. Java
-3. Python
-
-
+Finish all rest and update this file.
