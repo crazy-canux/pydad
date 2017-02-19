@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>search algorithm &mdash; pyad 1.0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pyad 1.0.0.0 documentation" href="index.html" />
+    <link rel="prev" title="sort algorithm" href="sortalgorithm.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="search-algorithm">
+<span id="searchalgorithm"></span><h1>search algorithm<a class="headerlink" href="#search-algorithm" title="Permalink to this headline">¶</a></h1>
+<p>七大查找算法</p>
+<ul>
+<li><p class="first">sequential search(顺序查找)</p>
+<blockquote>
+<div><p>顺序查找又叫线性查找.</p>
+<p>从第一个到最后一个和要查找的内容比较.</p>
+</div></blockquote>
+</li>
+<li><p class="first">binary search(二分查找)</p>
+<blockquote>
+<div><p>二分查找又叫折半查找.只能用于有序序列。</p>
+<p>设置三个下标，min=0, max=array.length - 1, mid = (min+max)/2。
+然后用要查找的关键值key和mid下标的元素比较。
+如果key比array[mid]大，那么将数组一分为二，min变为mid+1,mid重新计算。
+如果key比array[mid]小，那么数组一分为二，max变为mid-1,mid重新计算。
+如果key==array[mid]那么找到了。
+如果min&gt;=max那么没有找到。
+依次类推，每次将数组一分为二。</p>
+</div></blockquote>
+</li>
+<li><p class="first">insertion search(插值查找)</p>
+</li>
+<li><p class="first">fibonacci search(斐波拉切查找)</p>
+</li>
+<li><p class="first">tb search(树表查找)</p>
+<blockquote>
+<div><p>树表查找分为二叉树查找,2-3树查找,红黑树查找,B树和B+树查找.</p>
+</div></blockquote>
+</li>
+<li><p class="first">block search(分块查找)</p>
+</li>
+<li><p class="first">hash search(哈希查找)</p>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pyad</a></h1>
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=crazy-canux&repo=pyad&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">search algorithm</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="sortalgorithm.html" title="previous chapter">sort algorithm</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, <a href="http://canuxcheng.com">Canux CHENG</a>.
+      
+      |
+      <a href="_sources/searchalgorithm.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/crazy-canux/pyad" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
