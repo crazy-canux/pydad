@@ -45,3 +45,11 @@ def bubble_sort_desc(seq):
         for j in range(1, length-i):
             if seq[j] > seq[j-1]:
                 seq[j-1], seq[j] = seq[j], seq[j-1]
+    return seq
+
+
+if __name__ == "__main__":
+    seq = [200, 59, -6, 67, 0, 18, 59]
+    print("source seq: {}".format(seq))
+    print("after bubble sort: {}".format(bubble_sort(seq)))
+    print("after bubble sort desc: {}".format(bubble_sort_desc(seq)))

@@ -60,4 +60,4 @@ if __name__ == "__main__":
     seq = [200, 59, -6, 67, 0, 18, 59]
     print("source seq: {}".format(seq))
     print("after selection_sort: {}".format(selection_sort(seq)))
-    #print("after selection_sort_desc: {}".format(selection_sort_desc(seq)))
+    print("after selection_sort_desc: {}".format(selection_sort_desc(seq)))
