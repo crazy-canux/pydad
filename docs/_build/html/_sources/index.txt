@@ -6,6 +6,8 @@
 Algorithm and Design Pattern
 ============================
 
+Include all data structure.
+
 Include 10 sort algorithm and 7 search algorithm.
 
 Include 6 principle and 23 design patterns.
@@ -13,6 +15,7 @@ Include 6 principle and 23 design patterns.
 .. toctree::
    :maxdepth: 2
 
+   datastructure
    sortalgorithm
    searchalgorithm
    designpattern

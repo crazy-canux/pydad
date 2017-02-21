@@ -1,12 +1,14 @@
 # About
 
-研究包括数据结构和算法,设计模式等高级知识.
+Include data structure, algorithm and design pattern.
+
+***
+
+# data structure
 
 ***
 
 # sort algorithm
-
-十大排序算法
 
 * bubble sort(冒泡排序)
 
@@ -32,8 +34,6 @@
 
 # search algorithm
 
-七大查找算法
-
 * sequential search(顺序查找)
 
 * binary search(二分查找)
@@ -51,5 +51,7 @@
 ***
 
 # design pattern 6 priciple
+
+***
 
 # design pattern 23 methods
