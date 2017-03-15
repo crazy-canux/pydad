@@ -2,6 +2,12 @@
 
 Include data structure, algorithm and design pattern.
 
+Related project:
+
+<https://github.com/nryoung/algorithms>
+
+<https://github.com/faif/python-patterns>
+
 ***
 
 # data structure

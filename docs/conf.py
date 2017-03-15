@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# pyad documentation build configuration file, created by
+# pydad documentation build configuration file, created by
 # sphinx-quickstart on Sun Feb 19 01:26:57 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'pyad'
+project = u'pydad'
 copyright = u'2017, <a href="http://canuxcheng.com">Canux CHENG</a>'
 author = u'Canux CHENG'
 
@@ -118,7 +118,7 @@ html_theme = 'alabaster'
 #html_theme_options = {}
 html_theme_options = {
     'github_user': 'crazy-canux',
-    'github_repo': 'pyad',
+    'github_repo': 'pydad',
     'github_banner': True,
     'show_powered_by': False,
     'show_related': True,
@@ -219,7 +219,7 @@ html_sidebars = {
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pyaddoc'
+htmlhelp_basename = 'pydaddoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -241,7 +241,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'pyad.tex', u'pyad Documentation',
+  (master_doc, 'pydad.tex', u'pydad Documentation',
    u'Canux CHENG', 'manual'),
 ]
 
@@ -271,7 +271,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pyad', u'pyad Documentation',
+    (master_doc, 'pydad', u'pydad Documentation',
      [author], 1)
 ]
 
@@ -285,8 +285,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'pyad', u'pyad Documentation',
-   author, 'pyad', 'One line description of project.',
+  (master_doc, 'pydad', u'pydad Documentation',
+   author, 'pydad', 'One line description of project.',
    'Miscellaneous'),
 ]
 
