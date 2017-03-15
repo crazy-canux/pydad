@@ -51,8 +51,9 @@
 第二轮就是从前到倒数第二个相邻的比较，第二大的就在倒数第二位置。
 ...
 依次类推，最后第0个和第1个比较。</p>
-<p>时间复杂度: O(n&lt;sup&gt;2&lt;/sup&gt;)
-空间复杂度: O(1)</p>
+<p>时间复杂度： 最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+空间复杂度： 平均O(1)
+稳定性：　稳定</p>
 </div></blockquote>
 </li>
 <li><p class="first">selection sort(选择排序)</p>
@@ -62,52 +63,44 @@
 第一轮比较晚之后获取第一个最值,然后和第0个值交换,这样真的最值就在第一个位置.
 ...
 依次类推,直到倒数第二个和最后一个比较。</p>
-<p>时间复杂度: O(n&lt;sup&gt;2&lt;/sup&gt;)
-空间复杂度: O(1)</p>
+<p>时间复杂度: 平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+空间复杂度：
+稳定性：</p>
 </div></blockquote>
 </li>
 <li><p class="first">insertion sort(插入排序)</p>
-<blockquote>
-<div><p>时间复杂度: O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
-</div></blockquote>
 </li>
 <li><p class="first">shell sort(希尔排序)</p>
 <blockquote>
-<div><p>时间复杂度: O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
+<div><p>希尔排序是基于插入排序的．</p>
 </div></blockquote>
 </li>
 <li><p class="first">quick sort(快速排序)</p>
 <blockquote>
 <div><p>快速排序是冒泡排序的升级版,是目前速度最快的排序.</p>
-<p>时间复杂度: O(n&lt;sup&gt;2&lt;/sup&gt;) 到 O(n*logn)</p>
+<p>时间复杂度：最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(nlog(n))
+空间复杂度：O(log&lt;sub&gt;2&lt;sub&gt;n) ~ O(n)
+稳定性：　不稳定</p>
 </div></blockquote>
 </li>
 <li><p class="first">merge sort(归并排序)</p>
-<blockquote>
-<div><p>时间复杂度: O(n*logn)</p>
-</div></blockquote>
 </li>
 <li><p class="first">heap sort(堆排序)</p>
 <blockquote>
 <div><p>堆排序也叫二叉树排序.</p>
-<p>时间复杂度: O(n*logn)</p>
 </div></blockquote>
 </li>
 <li><p class="first">radix sort(基数排序)</p>
 <blockquote>
 <div><p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
-<p>时间复杂度: O(n)</p>
+<p>时间复杂度: 平均O(n * k)
+空间复杂度：
+稳定性：</p>
 </div></blockquote>
 </li>
 <li><p class="first">counting sort(计数排序)</p>
-<blockquote>
-<div><p>时间复杂度: O(n)</p>
-</div></blockquote>
 </li>
 <li><p class="first">bucket sort(桶排序)</p>
-<blockquote>
-<div><p>时间复杂度: O(n)</p>
-</div></blockquote>
 </li>
 </ul>
 </div>

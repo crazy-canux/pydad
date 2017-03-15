@@ -1,4 +1,4 @@
-.. pyad documentation master file, created by
+.. pydad documentation master file, created by
    sphinx-quickstart on Sun Feb 19 01:26:57 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.

@@ -16,8 +16,9 @@ sort algorithm
     ...
     依次类推，最后第0个和第1个比较。
 
-    时间复杂度: O(n<sup>2</sup>)
-    空间复杂度: O(1)
+    时间复杂度： 最差O(n<sup>2<sup>), 平均O(n<sup>2</sup>)
+    空间复杂度： 平均O(1)
+    稳定性：　稳定
 
 * selection sort(选择排序)
 
@@ -27,43 +28,39 @@ sort algorithm
     ...
     依次类推,直到倒数第二个和最后一个比较。
 
-    时间复杂度: O(n<sup>2</sup>)
-    空间复杂度: O(1)
+    时间复杂度: 平均O(n<sup>2</sup>)
+    空间复杂度：
+    稳定性：
 
 * insertion sort(插入排序)
 
-    时间复杂度: O(n<sup>2</sup>)
-
 * shell sort(希尔排序)
 
-    时间复杂度: O(n<sup>2</sup>)
+    希尔排序是基于插入排序的．
 
 * quick sort(快速排序)
 
     快速排序是冒泡排序的升级版,是目前速度最快的排序.
 
-    时间复杂度: O(n<sup>2</sup>) 到 O(n*logn)
+    时间复杂度：最差O(n<sup>2<sup>), 平均O(nlog(n))
+    空间复杂度：O(log<sub>2<sub>n) ~ O(n)
+    稳定性：　不稳定
 
 * merge sort(归并排序)
-
-    时间复杂度: O(n*logn)
 
 * heap sort(堆排序)
 
     堆排序也叫二叉树排序.
 
-    时间复杂度: O(n*logn)
-
 * radix sort(基数排序)
 
     基数排序,计数排序,桶排序三种排序都是非比较排序.
 
-    时间复杂度: O(n)
+    时间复杂度: 平均O(n * k)
+    空间复杂度：
+    稳定性：
 
 * counting sort(计数排序)
 
-    时间复杂度: O(n)
-
 * bucket sort(桶排序)
 
-    时间复杂度: O(n)

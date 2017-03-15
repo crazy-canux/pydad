@@ -11,6 +11,9 @@ search algorithm
 
     从第一个到最后一个和要查找的内容比较.
 
+    时间复杂度： 最差O(log(n)), 最佳O(1), 平均O(log(n))
+    空间复杂度：
+
 * binary search(二分查找)
 
     二分查找又叫折半查找.只能用于有序序列。
@@ -22,6 +25,9 @@ search algorithm
     如果key==array[mid]那么找到了。
     如果min>=max那么没有找到。
     依次类推，每次将数组一分为二。
+
+    时间复杂度：
+    空间复杂度：
 
 * insertion search(插值查找)
 
