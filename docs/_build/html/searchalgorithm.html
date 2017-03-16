@@ -24,6 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="pydad 1.0.0.0 documentation" href="index.html" />
+    <link rel="next" title="design pattern principle" href="designprinciple.html" />
     <link rel="prev" title="sort algorithm" href="sortalgorithm.html" />
    
   
@@ -40,18 +41,23 @@
   <div class="section" id="search-algorithm">
 <span id="searchalgorithm"></span><h1>search algorithm<a class="headerlink" href="#search-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>七大查找算法</p>
-<ul>
-<li><p class="first">sequential search(顺序查找)</p>
-<blockquote>
-<div><p>顺序查找又叫线性查找.</p>
+<div class="section" id="sequential-search">
+<h2>sequential search/顺序查找<a class="headerlink" href="#sequential-search" title="Permalink to this headline">¶</a></h2>
+<p>顺序查找又叫线性查找.</p>
 <p>从第一个到最后一个和要查找的内容比较.</p>
-<p>时间复杂度： 最差O(log(n)), 最佳O(1), 平均O(log(n))
-空间复杂度：</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>最差O(log(n)), 最佳O(1), 平均O(log(n))</p>
 </div></blockquote>
 </li>
-<li><p class="first">binary search(二分查找)</p>
-<blockquote>
-<div><p>二分查找又叫折半查找.只能用于有序序列。</p>
+<li><p class="first">空间复杂度</p>
+</li>
+</ul>
+</div>
+<div class="section" id="binary-search">
+<h2>binary search/二分查找<a class="headerlink" href="#binary-search" title="Permalink to this headline">¶</a></h2>
+<p>二分查找又叫折半查找.只能用于有序序列。</p>
 <p>设置三个下标，min=0, max=array.length - 1, mid = (min+max)/2。
 然后用要查找的关键值key和mid下标的元素比较。
 如果key比array[mid]大，那么将数组一分为二，min变为mid+1,mid重新计算。
@@ -59,24 +65,27 @@
 如果key==array[mid]那么找到了。
 如果min&gt;=max那么没有找到。
 依次类推，每次将数组一分为二。</p>
-<p>时间复杂度：
-空间复杂度：</p>
-</div></blockquote>
-</li>
-<li><p class="first">insertion search(插值查找)</p>
-</li>
-<li><p class="first">fibonacci search(斐波拉切查找)</p>
-</li>
-<li><p class="first">tb search(树表查找)</p>
-<blockquote>
-<div><p>树表查找分为二叉树查找,2-3树查找,红黑树查找,B树和B+树查找.</p>
-</div></blockquote>
-</li>
-<li><p class="first">block search(分块查找)</p>
-</li>
-<li><p class="first">hash search(哈希查找)</p>
-</li>
+<ul class="simple">
+<li>时间复杂度</li>
+<li>空间复杂度</li>
 </ul>
+</div>
+<div class="section" id="insertion-search">
+<h2>insertion search/插值查找<a class="headerlink" href="#insertion-search" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fibonacci-search">
+<h2>fibonacci search/斐波拉切查找<a class="headerlink" href="#fibonacci-search" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tb-search">
+<h2>tb search/树表查找<a class="headerlink" href="#tb-search" title="Permalink to this headline">¶</a></h2>
+<p>树表查找分为二叉树查找,2-3树查找,红黑树查找,B树和B+树查找.</p>
+</div>
+<div class="section" id="block-search">
+<h2>block search/分块查找<a class="headerlink" href="#block-search" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="hash-search">
+<h2>hash search/哈希查找<a class="headerlink" href="#hash-search" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -99,9 +108,22 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="datastructure.html">Fibonacci sequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datastructure.html">Data structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">search algorithm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">search algorithm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sequential-search">sequential search/顺序查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#binary-search">binary search/二分查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insertion-search">insertion search/插值查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fibonacci-search">fibonacci search/斐波拉切查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tb-search">tb search/树表查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#block-search">block search/分块查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hash-search">hash search/哈希查找</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="designprinciple.html">design pattern principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creationalpatterns.html">Creational patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="behavioralpatterns.html">behavioral patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structuralpatterns.html">structural patterns</a></li>
 </ul>
 
 <div class="relations">
@@ -109,6 +131,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="sortalgorithm.html" title="previous chapter">sort algorithm</a></li>
+      <li>Next: <a href="designprinciple.html" title="next chapter">design pattern principle</a></li>
   </ul></li>
 </ul>
 </div>

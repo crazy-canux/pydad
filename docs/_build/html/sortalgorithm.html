@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="pydad 1.0.0.0 documentation" href="index.html" />
     <link rel="next" title="search algorithm" href="searchalgorithm.html" />
-    <link rel="prev" title="Fibonacci sequence" href="datastructure.html" />
+    <link rel="prev" title="Data structure" href="datastructure.html" />
    
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
@@ -41,68 +41,109 @@
   <div class="section" id="sort-algorithm">
 <span id="sortalgorithm"></span><h1>sort algorithm<a class="headerlink" href="#sort-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>十大排序算法</p>
-<ul>
-<li><p class="first">bubble sort(冒泡排序)</p>
-<blockquote>
-<div><p>方法: 始终是相邻的两个比较.
-实现: 用第0个和第1个比较，如果第0个大就交换位置...用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
+<div class="section" id="bubble-sort">
+<h2>bubble sort/冒泡排序<a class="headerlink" href="#bubble-sort" title="Permalink to this headline">¶</a></h2>
+<p>始终是相邻的两个比较.</p>
+<p>用第0个和第1个比较，如果第0个大就交换位置...用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
 第一轮就是从前往后相邻的比较，最大的数就在最后一个位置。
 用第0个和第一个比较，如果第0个大就交换位置...用倒数第三个和倒数第二个比较，如果倒数第三个大就交换位置。
 第二轮就是从前到倒数第二个相邻的比较，第二大的就在倒数第二位置。
 ...
 依次类推，最后第0个和第1个比较。</p>
-<p>时间复杂度： 最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(n&lt;sup&gt;2&lt;/sup&gt;)
-空间复杂度： 平均O(1)
-稳定性：　稳定</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>最差O(n&lt;sup&gt;2&lt;sup&gt;)
+平均O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p class="first">selection sort(选择排序)</p>
+<li><p class="first">空间复杂度</p>
 <blockquote>
-<div><p>方法: 从所有序列中选出最值放到第一个位置,然后从剩下的选出最值放到第二个位置,以此类推.
-实现: 默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
+<div><p>平均O(1)</p>
+</div></blockquote>
+</li>
+<li><p class="first">稳定性</p>
+<blockquote>
+<div><p>稳定</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="selection-sort">
+<h2>selection sort/选择排序<a class="headerlink" href="#selection-sort" title="Permalink to this headline">¶</a></h2>
+<p>从所有序列中选出最值放到第一个位置,然后从剩下的选出最值放到第二个位置,以此类推.
+默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
 第一轮比较晚之后获取第一个最值,然后和第0个值交换,这样真的最值就在第一个位置.
 ...
 依次类推,直到倒数第二个和最后一个比较。</p>
-<p>时间复杂度: 平均O(n&lt;sup&gt;2&lt;/sup&gt;)
-空间复杂度：
-稳定性：</p>
-</div></blockquote>
-</li>
-<li><p class="first">insertion sort(插入排序)</p>
-</li>
-<li><p class="first">shell sort(希尔排序)</p>
+<ul>
+<li><p class="first">时间复杂度</p>
 <blockquote>
-<div><p>希尔排序是基于插入排序的．</p>
+<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p class="first">quick sort(快速排序)</p>
-<blockquote>
-<div><p>快速排序是冒泡排序的升级版,是目前速度最快的排序.</p>
-<p>时间复杂度：最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(nlog(n))
-空间复杂度：O(log&lt;sub&gt;2&lt;sub&gt;n) ~ O(n)
-稳定性：　不稳定</p>
-</div></blockquote>
+<li><p class="first">空间复杂度</p>
 </li>
-<li><p class="first">merge sort(归并排序)</p>
-</li>
-<li><p class="first">heap sort(堆排序)</p>
-<blockquote>
-<div><p>堆排序也叫二叉树排序.</p>
-</div></blockquote>
-</li>
-<li><p class="first">radix sort(基数排序)</p>
-<blockquote>
-<div><p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
-<p>时间复杂度: 平均O(n * k)
-空间复杂度：
-稳定性：</p>
-</div></blockquote>
-</li>
-<li><p class="first">counting sort(计数排序)</p>
-</li>
-<li><p class="first">bucket sort(桶排序)</p>
+<li><p class="first">稳定性</p>
 </li>
 </ul>
+</div>
+<div class="section" id="insertion-sort">
+<h2>insertion sort/插入排序<a class="headerlink" href="#insertion-sort" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="shell-sort">
+<h2>shell sort/希尔排序<a class="headerlink" href="#shell-sort" title="Permalink to this headline">¶</a></h2>
+<p>希尔排序是基于插入排序的．</p>
+</div>
+<div class="section" id="quick-sort">
+<h2>quick sort/快速排序<a class="headerlink" href="#quick-sort" title="Permalink to this headline">¶</a></h2>
+<p>快速排序是冒泡排序的升级版,是目前速度最快的排序.</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(nlog(n))</p>
+</div></blockquote>
+</li>
+<li><p class="first">空间复杂度</p>
+<blockquote>
+<div><p>O(log&lt;sub&gt;2&lt;sub&gt;n) ~ O(n)</p>
+</div></blockquote>
+</li>
+<li><p class="first">稳定性</p>
+<blockquote>
+<div><p>不稳定</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="merge-sort">
+<h2>merge sort/归并排序<a class="headerlink" href="#merge-sort" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="heap-sort">
+<h2>heap sort/堆排序<a class="headerlink" href="#heap-sort" title="Permalink to this headline">¶</a></h2>
+<p>堆排序也叫二叉树排序.</p>
+</div>
+<div class="section" id="radix-sort">
+<h2>radix sort/基数排序<a class="headerlink" href="#radix-sort" title="Permalink to this headline">¶</a></h2>
+<p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>平均O(n * k)</p>
+</div></blockquote>
+</li>
+<li><p class="first">空间复杂度</p>
+</li>
+<li><p class="first">稳定性</p>
+</li>
+</ul>
+</div>
+<div class="section" id="counting-sort">
+<h2>counting sort/计数排序<a class="headerlink" href="#counting-sort" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="bucket-sort">
+<h2>bucket sort/桶排序<a class="headerlink" href="#bucket-sort" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -125,16 +166,32 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="datastructure.html">Fibonacci sequence</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">sort algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datastructure.html">Data structure</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">sort algorithm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bubble-sort">bubble sort/冒泡排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#selection-sort">selection sort/选择排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insertion-sort">insertion sort/插入排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shell-sort">shell sort/希尔排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-sort">quick sort/快速排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#merge-sort">merge sort/归并排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#heap-sort">heap sort/堆排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#radix-sort">radix sort/基数排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#counting-sort">counting sort/计数排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bucket-sort">bucket sort/桶排序</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="searchalgorithm.html">search algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="designprinciple.html">design pattern principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creationalpatterns.html">Creational patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="behavioralpatterns.html">behavioral patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structuralpatterns.html">structural patterns</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="datastructure.html" title="previous chapter">Fibonacci sequence</a></li>
+      <li>Previous: <a href="datastructure.html" title="previous chapter">Data structure</a></li>
       <li>Next: <a href="searchalgorithm.html" title="next chapter">search algorithm</a></li>
   </ul></li>
 </ul>

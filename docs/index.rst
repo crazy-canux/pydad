@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Algorithm and Design Pattern
-============================
+Data_structure Algorithm and Design_pattern
+===========================================
 
 Include all data structure.
 
@@ -18,10 +18,10 @@ Include 6 principle and 23 design patterns.
    datastructure
    sortalgorithm
    searchalgorithm
-   designpattern
-   designpattern1
-   designpattern2
-   designpattern3
+   designprinciple
+   creationalpatterns
+   behavioralpatterns
+   structuralpatterns
 
 
 
