@@ -4,6 +4,12 @@
 .. image:: https://img.shields.io/pypi/dm/pydad.svg?style=plastic
    :target: https://pypi.python.org/pypi/pydad/
 
+.. image:: https://travis-ci.org/crazy-canux/pydad.svg?branch=master
+   :target: https://travis-ci.org/crazy-canux/pydad
+
+.. image:: https://coveralls.io/repos/github/crazy-canux/pydad/badge.svg?branch=master
+   :target: https://coveralls.io/github/crazy-canux/pydad?branch=master
+
 =====
 pydad
 =====
