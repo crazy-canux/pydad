@@ -1,7 +1,12 @@
 .. _datastructure:
 
+Data structure
+==============
+
+数据结构
+
 Fibonacci sequence
-==================
+------------------
 
 斐波那契数列,也叫黄金分割数列::
 
