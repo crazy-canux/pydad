@@ -1,17 +1,16 @@
 .. _datastructure:
 
-Data structure
+data structure
 ==============
 
 数据结构
 
-Fibonacci sequence
+fibonacci sequence
 ------------------
 
 斐波那契数列,也叫黄金分割数列::
 
-    1, 1, 2, 3, 5, 8, 13, ...
-
+    0, 1, 1, 2, 3, 5, 8, 13, ...
+    seq[0] = 0
     seq[1] = 1
-    seq[2] = 1
-    seq[n] = seq[n-1] + seq[n-2] (n>2)
+    seq[n] = seq[n-1] + seq[n-2] (n>=2)

@@ -28,12 +28,6 @@ Todo
 
 * Distribute 0.0.1 to pypi.
 
-=============
-Documentation
-=============
-
-`[Documentation] <http://pydad.readthedocs.io/en/latest/>`_
-
 ============
 Contribution
 ============

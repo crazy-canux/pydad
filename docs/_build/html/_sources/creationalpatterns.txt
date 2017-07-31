@@ -1,6 +1,6 @@
 .. _creationalpatterns:
 
-Creational patterns
+creational patterns
 ===================
 
 ５个创建型模式
