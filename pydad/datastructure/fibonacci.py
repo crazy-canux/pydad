@@ -19,7 +19,8 @@ DESCRIPTION:
 """
 
 def get_fib_value_while(number):
-    index, pre, nxt = 0, 0, 1
+    index = 0
+    pre, nxt = 0, 1
     while index < number:
         pre, nxt = nxt, pre + nxt
         index += 1
@@ -31,16 +32,28 @@ def get_fib_value_recursion(number):
     elif number == 1:
         return 1
     else:
-        return get_fib_value_recursion(number-2) + get_fib_value_recursion(number-1)
+        return get_fib_value_recursion(number-2) + \
+            get_fib_value_recursion(number-1)
 
 def get_fib_value_iter(number):
     fib_list = [0, 1]
-    for loop in range(number-1):
+    for _ in range(number-1):
         fib_list.append(fib_list[-2] + fib_list[-1])
     return fib_list[number]
 
-if __name__ == "__main__":
-    print get_fib_value_while(10)
-    print get_fib_value_recursion(10)
-    print get_fib_value_iter(10)
+def get_fib_sum_while(number):
+    index = 0
+    fsum = 0
+    pre, nxt = 0, 1
+    while index < number:
+        pre, nxt = nxt, pre + nxt
+        fsum += pre
+        index += 1
+    return fsum
 
+if __name__ == "__main__":
+    for loop in range(10):
+        print get_fib_value_while(loop)
+        print get_fib_value_recursion(loop)
+        print get_fib_value_iter(loop)
+        print 'sum: ', get_fib_sum_while(loop)
