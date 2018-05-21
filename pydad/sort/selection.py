@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-selection_sort.py for sort algorithm selection.
+selection.py for sort search selection.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -17,7 +17,7 @@ DESCRIPTION:
 
 
 def selection_sort(seq):
-    """Main function for sort algorithm sort from min to max.
+    """Main function for sort search sort from min to max.
 
     :param seq: a sequence can be string, tupple, list.
     :type seq: sequence.
@@ -39,7 +39,7 @@ def selection_sort(seq):
 
 
 def selection_sort_desc(seq):
-    """Main function for sort algorithm sort from max to min.
+    """Main function for sort search sort from max to min.
 
     :param seq: a sequence can be string, tupple, list.
     :type seq: sequence.

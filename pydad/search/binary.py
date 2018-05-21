@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-binary_search.py for search algorithm binary.
+binary.py for search search binary.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -17,7 +17,7 @@ DESCRIPTION:
 
 
 def binary_search(seq, key):
-    """Main function use binary search algorithm to find the key word in a sequence.
+    """Main function use binary search search to find the key word in a sequence.
 
     :param seq: sequence can be string, tupple, list.
     :type seq: sequence.

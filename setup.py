@@ -23,7 +23,7 @@ NAME = 'pydad'
 VERSION = pydad.__version__
 URL = 'https://github.com/crazy-canux/pydad'
 DESCRIPTION = "Data structure, Algorithm and Design pattern written in python."
-KEYWORD = "python algorithm"
+KEYWORD = "python search"
 
 
 def read(readme):

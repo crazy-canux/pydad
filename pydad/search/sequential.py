@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-sequential_search.py for search algorithm sequential.
+sequential.py for search search sequential.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -17,7 +17,7 @@ DESCRIPTION:
 
 
 def sequential_search(seq, key):
-    """Main function for sequential search algorithm.
+    """Main function for sequential search search.
 
     :param seq: a sequence.
     :type seq: sequence.

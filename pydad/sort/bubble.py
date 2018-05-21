@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-bubble_sort.py for sort algorithm for bubble sort.
+bubble.py for sort search for bubble sort.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
