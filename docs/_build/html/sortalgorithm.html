@@ -1,37 +1,39 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>sort algorithm &mdash; pydad 1.0.0.0 documentation</title>
-    
+    <title>sort algorithm/比较排序 &#8212; pydad 1.0.0.0 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '1.0.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="pydad 1.0.0.0 documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="search algorithm" href="searchalgorithm.html" />
     <link rel="prev" title="data structure" href="datastructure.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body>
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -39,22 +41,24 @@
           <div class="body" role="main">
             
   <div class="section" id="sort-algorithm">
-<span id="sortalgorithm"></span><h1>sort algorithm<a class="headerlink" href="#sort-algorithm" title="Permalink to this headline">¶</a></h1>
-<p>十大排序算法</p>
+<span id="sortalgorithm"></span><h1>sort algorithm/比较排序<a class="headerlink" href="#sort-algorithm" title="Permalink to this headline">¶</a></h1>
+<p>七大比较排序算法</p>
 <div class="section" id="bubble-sort">
 <h2>bubble sort/冒泡排序<a class="headerlink" href="#bubble-sort" title="Permalink to this headline">¶</a></h2>
-<p>始终是相邻的两个比较.</p>
-<p>用第0个和第1个比较，如果第0个大就交换位置...用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
+<p>始终是未排序的两个相邻值比较.</p>
+<p>用第0个和第1个比较，如果第0个大就交换位置…用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
 第一轮就是从前往后相邻的比较，最大的数就在最后一个位置。
-用第0个和第一个比较，如果第0个大就交换位置...用倒数第三个和倒数第二个比较，如果倒数第三个大就交换位置。
+用第0个和第一个比较，如果第0个大就交换位置…用倒数第三个和倒数第二个比较，如果倒数第三个大就交换位置。
 第二轮就是从前到倒数第二个相邻的比较，第二大的就在倒数第二位置。
-...
-依次类推，最后第0个和第1个比较。</p>
+依次类推
+…</p>
+<p>i表示比较几轮（总共比较len-1轮），j表示每次多少个相邻的数比较（每轮比较len-1-i次）。</p>
 <ul>
 <li><p class="first">时间复杂度</p>
 <blockquote>
-<div><p>最差O(n&lt;sup&gt;2&lt;sup&gt;)
-平均O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
+<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+最好O(n)
+最差O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
 <li><p class="first">空间复杂度</p>
@@ -71,42 +75,83 @@
 </div>
 <div class="section" id="selection-sort">
 <h2>selection sort/选择排序<a class="headerlink" href="#selection-sort" title="Permalink to this headline">¶</a></h2>
-<p>从所有序列中选出最值放到第一个位置,然后从剩下的选出最值放到第二个位置,以此类推.
-默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
-第一轮比较晚之后获取第一个最值,然后和第0个值交换,这样真的最值就在第一个位置.
-...
-依次类推,直到倒数第二个和最后一个比较。</p>
+<p>始终是假设的最值和后面未排序的值依次比较。</p>
+<p>第一轮，默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
+如果一轮比较完成，最小值下标不是0，就交换位置，将最小值放到第一。
+以此类推。
+…</p>
+<p>i表示比较几轮(len-1), j表示每轮比较的次数(len - (i+1)).</p>
 <ul>
 <li><p class="first">时间复杂度</p>
 <blockquote>
-<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
+<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+最好O(n&lt;sup&gt;2&lt;/sup&gt;)
+最差O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
 <li><p class="first">空间复杂度</p>
+<blockquote>
+<div><p>O(1)</p>
+</div></blockquote>
 </li>
 <li><p class="first">稳定性</p>
+<blockquote>
+<div><p>不稳定</p>
+</div></blockquote>
 </li>
 </ul>
 </div>
 <div class="section" id="insertion-sort">
 <h2>insertion sort/插入排序<a class="headerlink" href="#insertion-sort" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>.时间复杂度</p>
+<blockquote>
+<div>平均 O(n&lt;sup&gt;2&lt;/sup&gt;)
+最好 O(n)
+最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</div></blockquote>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>.空间复杂度</p>
+<blockquote>
+<div>O(1)</div></blockquote>
+<p><a href="#id5"><span class="problematic" id="id6">*</span></a>.稳定性</p>
+<blockquote>
+<div>稳定</div></blockquote>
 </div>
 <div class="section" id="shell-sort">
 <h2>shell sort/希尔排序<a class="headerlink" href="#shell-sort" title="Permalink to this headline">¶</a></h2>
 <p>希尔排序是基于插入排序的．</p>
-</div>
-<div class="section" id="quick-sort">
-<h2>quick sort/快速排序<a class="headerlink" href="#quick-sort" title="Permalink to this headline">¶</a></h2>
-<p>快速排序是冒泡排序的升级版,是目前速度最快的排序.</p>
 <ul>
 <li><p class="first">时间复杂度</p>
 <blockquote>
-<div><p>最差O(n&lt;sup&gt;2&lt;sup&gt;), 平均O(nlog(n))</p>
+<div><p>平均 O(nlog(n)) ~ O(n&lt;sup&gt;2&lt;/sup&gt;)
+最好 O(n&lt;sup&gt;1.3&lt;/sup&gt;)
+最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
 <li><p class="first">空间复杂度</p>
 <blockquote>
-<div><p>O(log&lt;sub&gt;2&lt;sub&gt;n) ~ O(n)</p>
+<div><p>O(1)</p>
+</div></blockquote>
+</li>
+<li><p class="first">稳定性</p>
+<blockquote>
+<div><p>不稳定</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="heap-sort">
+<h2>heap sort/堆排序<a class="headerlink" href="#heap-sort" title="Permalink to this headline">¶</a></h2>
+<p>堆排序也叫二叉树排序.</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>平均 O(nlog(n))
+最好 O(nlog(n))
+最差 O(nlog(n))</p>
+</div></blockquote>
+</li>
+<li><p class="first">空间复杂度</p>
+<blockquote>
+<div><p>O(1)</p>
 </div></blockquote>
 </li>
 <li><p class="first">稳定性</p>
@@ -118,25 +163,55 @@
 </div>
 <div class="section" id="merge-sort">
 <h2>merge sort/归并排序<a class="headerlink" href="#merge-sort" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="heap-sort">
-<h2>heap sort/堆排序<a class="headerlink" href="#heap-sort" title="Permalink to this headline">¶</a></h2>
-<p>堆排序也叫二叉树排序.</p>
-</div>
-<div class="section" id="radix-sort">
-<h2>radix sort/基数排序<a class="headerlink" href="#radix-sort" title="Permalink to this headline">¶</a></h2>
-<p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
 <ul>
 <li><p class="first">时间复杂度</p>
 <blockquote>
-<div><p>平均O(n * k)</p>
+<div><p>平均 O(nlog(n))
+最好 O(nlog(n))
+最差 O(nlog(n))</p>
 </div></blockquote>
 </li>
 <li><p class="first">空间复杂度</p>
+<blockquote>
+<div><p>O(n)</p>
+</div></blockquote>
 </li>
 <li><p class="first">稳定性</p>
+<blockquote>
+<div><p>稳定</p>
+</div></blockquote>
 </li>
 </ul>
+</div>
+<div class="section" id="quick-sort">
+<h2>quick sort/快速排序<a class="headerlink" href="#quick-sort" title="Permalink to this headline">¶</a></h2>
+<p>快速排序是冒泡排序的升级版,是目前速度最快的排序.</p>
+<ul>
+<li><p class="first">时间复杂度</p>
+<blockquote>
+<div><p>平均 O(nlog(n))
+最好 O(nlog(n))
+最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
+</div></blockquote>
+</li>
+<li><p class="first">空间复杂度</p>
+<blockquote>
+<div><p>O(log(n)) ~ O(n)</p>
+</div></blockquote>
+</li>
+<li><p class="first">稳定性</p>
+<blockquote>
+<div><p>不稳定</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id7">
+<h1>sort algorithm/非比较排序<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
+<p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
+<div class="section" id="radix-sort">
+<h2>radix sort/基数排序<a class="headerlink" href="#radix-sort" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="counting-sort">
 <h2>counting sort/计数排序<a class="headerlink" href="#counting-sort" title="Permalink to this headline">¶</a></h2>
@@ -158,23 +233,30 @@
 
 
 
+
 <p>
-<iframe src="https://ghbtns.com/github-btn.html?user=crazy-canux&repo=pydad&type=watch&count=true&size=large"
+<iframe src="https://ghbtns.com/github-btn.html?user=crazy-canux&repo=pydad&type=watch&count=true&size=large&v=2"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
+
+
+
 
 
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="datastructure.html">data structure</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">sort algorithm</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">sort algorithm/比较排序</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#bubble-sort">bubble sort/冒泡排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#selection-sort">selection sort/选择排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#insertion-sort">insertion sort/插入排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#shell-sort">shell sort/希尔排序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quick-sort">quick sort/快速排序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#merge-sort">merge sort/归并排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#heap-sort">heap sort/堆排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#merge-sort">merge sort/归并排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-sort">quick sort/快速排序</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id7">sort algorithm/非比较排序</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#radix-sort">radix sort/基数排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#counting-sort">counting sort/计数排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bucket-sort">bucket sort/桶排序</a></li>
@@ -199,14 +281,11 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -217,7 +296,7 @@
       &copy;2017, <a href="http://canuxcheng.com">Canux CHENG</a>.
       
       |
-      <a href="_sources/sortalgorithm.txt"
+      <a href="_sources/sortalgorithm.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

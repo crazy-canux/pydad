@@ -16,7 +16,7 @@ DESCRIPTION:
 """
 
 
-def binary_search(seq, key):
+def binary(seq, key):
     """Main function use binary search search to find the key word in a sequence.
 
     :param seq: sequence can be string, tupple, list.
@@ -39,11 +39,3 @@ def binary_search(seq, key):
         else:
             return mid_index
     return False
-
-
-if __name__ == "__main__":
-    seq = [-9, 6, 15, 159, 2489, 98756]
-    key = 159
-    # seq = "abcdxyz"
-    # key = 'd'
-    print("index {0} in {1} is the same with {2}.".format(binary_search(seq, key), seq, key))

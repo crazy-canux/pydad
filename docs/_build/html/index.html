@@ -1,36 +1,38 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Data_structure Algorithm and Design_pattern &mdash; pydad 1.0.0.0 documentation</title>
-    
+    <title>Data_structure Algorithm and Design_pattern &#8212; pydad 1.0.0.0 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '1.0.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="pydad 1.0.0.0 documentation" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="data structure" href="datastructure.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body>
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -48,14 +50,17 @@
 <li class="toctree-l2"><a class="reference internal" href="datastructure.html#fibonacci-sequence">fibonacci sequence</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm/比较排序</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#bubble-sort">bubble sort/冒泡排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#selection-sort">selection sort/选择排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#insertion-sort">insertion sort/插入排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#shell-sort">shell sort/希尔排序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#quick-sort">quick sort/快速排序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#merge-sort">merge sort/归并排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#heap-sort">heap sort/堆排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#merge-sort">merge sort/归并排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#quick-sort">quick sort/快速排序</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#id7">sort algorithm/非比较排序</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#radix-sort">radix sort/基数排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#counting-sort">counting sort/计数排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#bucket-sort">bucket sort/桶排序</a></li>
@@ -106,16 +111,21 @@
 
 
 
+
 <p>
-<iframe src="https://ghbtns.com/github-btn.html?user=crazy-canux&repo=pydad&type=watch&count=true&size=large"
+<iframe src="https://ghbtns.com/github-btn.html?user=crazy-canux&repo=pydad&type=watch&count=true&size=large&v=2"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
+
+
+
 
 
 <h3>Navigation</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datastructure.html">data structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm/比较排序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#id7">sort algorithm/非比较排序</a></li>
 <li class="toctree-l1"><a class="reference internal" href="searchalgorithm.html">search algorithm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="designprinciple.html">design pattern principle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creationalpatterns.html">creational patterns</a></li>
@@ -134,14 +144,11 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -152,7 +159,7 @@
       &copy;2017, <a href="http://canuxcheng.com">Canux CHENG</a>.
       
       |
-      <a href="_sources/index.txt"
+      <a href="_sources/index.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

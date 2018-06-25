@@ -16,7 +16,7 @@ DESCRIPTION:
 """
 
 
-def sequential_search(seq, key):
+def sequential(seq, key):
     """Main function for sequential search search.
 
     :param seq: a sequence.
@@ -30,9 +30,3 @@ def sequential_search(seq, key):
         if seq[i] == key:
             return i
     return False
-
-
-if __name__ == "__main__":
-    seq = [157, 27, -8, 4895, 0, -49]
-    key = -8
-    print("index: {0}, in seq: {1}, is the same with key: {2}.".format(sequential_search(seq, key), seq, key))

@@ -19,18 +19,18 @@ DESCRIPTION:
 """
 
 
-def get_fib_value_by_for(index):
+def fibonacci_array(index):
     fib_list = [0, 1]
     for _ in range(index-1):
         fib_list.append(fib_list[-2] + fib_list[-1])
     return fib_list[index]
 
 
-def get_fib_value(index):
+def fibonacci(index):
     if index == 0:
         return 0
     elif index == 1:
         return 1
     else:
-        return get_fib_value(index-2) + \
-            get_fib_value(index-1)
+        return fibonacci(index - 2) + \
+               fibonacci(index - 1)
