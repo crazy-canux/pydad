@@ -1,8 +1,8 @@
 .. _sortalgorithm:
 
 
-sort algorithm/比较排序
-=======================
+Comparison sort
+===============
 
 七大比较排序算法
 
@@ -152,8 +152,8 @@ quick sort/快速排序
 
     不稳定
 
-sort algorithm/非比较排序
-=========================
+Non comparison sort
+===================
 
 基数排序,计数排序,桶排序三种排序都是非比较排序.
 

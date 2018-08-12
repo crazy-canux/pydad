@@ -24,7 +24,7 @@ def selection_sort(seq):
     :return seq: return a sequence after sort.
     :rtype seq: sequence.
     """
-    for i in range(len(seq)):
+    for i in range(len(seq)-1):
         min_index = i
         for j in range(i+1, len(seq)):
             if seq[j] < seq[min_index]:
