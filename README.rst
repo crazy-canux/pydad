@@ -22,12 +22,6 @@ Related project:
 
 <https://github.com/faif/python-patterns>
 
-====
-Todo
-====
-
-* Distribute 0.0.1 to pypi.
-
 ============
 Contribution
 ============
