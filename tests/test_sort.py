@@ -1,17 +1,15 @@
 import unittest
-import sys
-import os
-sys.path.insert(0, os.path.abspath(".."))
 
-from pydad.sort.bubble import bubble_sort
 from pydad.sort.selection import selection_sort
-
-seq = [23, 78, -25, 82, 0, 396]
+from pydad.sort.bubble import bubble_sort
+from pydad.sort.quick import quick_sort
 
 
 class SortTestCase(unittest.TestCase):
     def test_bubble(self):
+        seq = [23, 78, -25, 82, 0, 396]
         res = bubble_sort(seq)
+        print(res)
         self.assertEqual(
             res[0], -25,
             msg='bubble sort failed.'
@@ -22,14 +20,29 @@ class SortTestCase(unittest.TestCase):
         )
 
     def test_selection(self):
+        seq = [23, 78, -25, 82, 0, 396]
         res1 = selection_sort(seq)
+        print(res1)
         self.assertEqual(
             res1[0], -25,
-            msg='bubble sort failed.'
+            msg='selection sort failed.'
         )
         self.assertEqual(
             res1[-1], 396,
-            msg='bubble sort failed.'
+            msg='selection sort failed.'
+        )
+
+    def test_quick(self):
+        seq = [23, 78, -25, 82, 0, 396]
+        res2 = quick_sort(seq)
+        print(res2)
+        self.assertEqual(
+            res2[0], -25,
+            msg='quick sort failed'
+        )
+        self.assertEqual(
+            res2[-1], 396,
+            msg='quick sort failed.'
         )
 
 

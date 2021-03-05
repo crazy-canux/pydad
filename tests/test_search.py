@@ -1,10 +1,8 @@
 import unittest
-import os
-import sys
-sys.path.insert(0, os.path.abspath(".."))
 
 from pydad.search.sequential import sequential
 from pydad.search.binary import binary
+
 
 seq1 = [23, 78, -25, 82, 0, 396]
 
@@ -25,5 +23,3 @@ class SearchTestCase(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-

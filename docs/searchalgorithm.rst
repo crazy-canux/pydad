@@ -8,7 +8,7 @@ search algorithm
 sequential search/顺序查找
 --------------------------
 
-顺序查找又叫线性查找.
+顺序查找又叫线性查找(linear search).
 
 从第一个到最后一个和要查找的内容比较.
 
