@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bubble.py for sort search for bubble sort.
+quick.py for quick sort.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.

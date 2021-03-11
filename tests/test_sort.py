@@ -3,6 +3,7 @@ import unittest
 from pydad.sort.selection import selection_sort
 from pydad.sort.bubble import bubble_sort
 from pydad.sort.quick import quick_sort
+from pydad.sort.insertion import insertion_sort
 
 
 class SortTestCase(unittest.TestCase):
@@ -42,6 +43,19 @@ class SortTestCase(unittest.TestCase):
         )
         self.assertEqual(
             res2[-1], 396,
+            msg='quick sort failed.'
+        )
+
+    def test_insertion(self):
+        seq = [23, 78, -25, 82, 0, 396]
+        res = insertion_sort(seq)
+        print(res)
+        self.assertEqual(
+            res[0], -25,
+            msg='quick sort failed'
+        )
+        self.assertEqual(
+            res[-1], 396,
             msg='quick sort failed.'
         )
 

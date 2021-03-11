@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-bubble.py for sort search for bubble sort.
+bubble.py for bubble sort.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
