@@ -4,6 +4,7 @@ from pydad.sort.selection import selection_sort
 from pydad.sort.bubble import bubble_sort
 from pydad.sort.quick import quick_sort
 from pydad.sort.insertion import insertion_sort
+from pydad.sort.shell import shell_sort
 
 
 class SortTestCase(unittest.TestCase):
@@ -57,6 +58,19 @@ class SortTestCase(unittest.TestCase):
         self.assertEqual(
             res[-1], 396,
             msg='quick sort failed.'
+        )
+
+    def test_shell(self):
+        seq = [23, 78, -25, 82, 0, 396]
+        res = shell_sort(seq)
+        print(res)
+        self.assertEqual(
+            res[0], -25,
+            msg='shell sort failed'
+        )
+        self.assertEqual(
+            res[-1], 396,
+            msg='shell sort failed'
         )
 
 
