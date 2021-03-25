@@ -1,6 +1,6 @@
 import unittest
 
-from pydad.search.sequential import sequential
+from pydad.search.linear import linear
 from pydad.search.binary import binary
 
 
@@ -8,9 +8,9 @@ seq1 = [23, 78, -25, 82, 0, 396]
 
 
 class SearchTestCase(unittest.TestCase):
-    def test_sequnetial(self):
+    def test_linear(self):
         self.assertEqual(
-            sequential(seq1, 0), 4,
+            linear(seq1, 0), 4,
             msg="find 0 failed."
         )
 

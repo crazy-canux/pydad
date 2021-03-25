@@ -1,60 +1,51 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>search algorithm &#8212; pydad 1.0.0.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0.0.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="design pattern principle" href="designprinciple.html" />
-    <link rel="prev" title="sort algorithm/比较排序" href="sortalgorithm.html" />
+    <link rel="prev" title="Comparison sort" href="sortalgorithm.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="search-algorithm">
 <span id="searchalgorithm"></span><h1>search algorithm<a class="headerlink" href="#search-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>七大查找算法</p>
-<div class="section" id="sequential-search">
-<h2>sequential search/顺序查找<a class="headerlink" href="#sequential-search" title="Permalink to this headline">¶</a></h2>
-<p>顺序查找又叫线性查找.</p>
+<div class="section" id="linear-search">
+<h2>linear search/线性查找<a class="headerlink" href="#linear-search" title="Permalink to this headline">¶</a></h2>
+<p>线性查找又叫顺序查找(sequential search).</p>
 <p>从第一个到最后一个和要查找的内容比较.</p>
 <ul>
-<li><p class="first">时间复杂度</p>
+<li><p>时间复杂度</p>
 <blockquote>
 <div><p>O(n)</p>
 </div></blockquote>
 </li>
-<li><p class="first">空间复杂度</p>
-</li>
+<li><p>空间复杂度</p></li>
 </ul>
 </div>
 <div class="section" id="binary-search">
@@ -68,12 +59,12 @@
 如果min&gt;=max那么没有找到。
 依次类推，每次将数组一分为二。</p>
 <ul class="simple">
-<li>时间复杂度</li>
-<li>空间复杂度</li>
+<li><p>时间复杂度</p></li>
+<li><p>空间复杂度</p></li>
 </ul>
 </div>
-<div class="section" id="insertion-search">
-<h2>insertion search/插值查找<a class="headerlink" href="#insertion-search" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interpolation-search">
+<h2>interpolation search/插值查找<a class="headerlink" href="#interpolation-search" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="fibonacci-search">
 <h2>fibonacci search/斐波拉切查找<a class="headerlink" href="#fibonacci-search" title="Permalink to this headline">¶</a></h2>
@@ -92,6 +83,7 @@
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -115,12 +107,12 @@
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="datastructure.html">data structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm/比较排序</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#id7">sort algorithm/非比较排序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">Comparison sort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#non-comparison-sort">Non comparison sort</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">search algorithm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#sequential-search">sequential search/顺序查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linear-search">linear search/线性查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#binary-search">binary search/二分查找</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insertion-search">insertion search/插值查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interpolation-search">interpolation search/插值查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fibonacci-search">fibonacci search/斐波拉切查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tb-search">tb search/树表查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#block-search">block search/分块查找</a></li>
@@ -137,21 +129,29 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="sortalgorithm.html" title="previous chapter">sort algorithm/比较排序</a></li>
+      <li>Previous: <a href="sortalgorithm.html" title="previous chapter">Comparison sort</a></li>
       <li>Next: <a href="designprinciple.html" title="next chapter">design pattern principle</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-sequential.py for search search sequential.
+linear.py for linear search.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -15,7 +15,7 @@ DESCRIPTION:
 """
 
 
-def sequential(seq, key):
+def linear(seq, key):
     """Main function for sequential search search.
 
     :param seq: a sequence.

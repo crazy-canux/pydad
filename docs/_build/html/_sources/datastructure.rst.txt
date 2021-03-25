@@ -5,6 +5,18 @@ data structure
 
 数据结构
 
+队列
+
+堆
+
+栈
+
+链表
+
+二叉树
+
+图
+
 fibonacci sequence
 ------------------
 

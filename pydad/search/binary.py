@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-binary.py for search search binary.
+binary.py for binary search.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.

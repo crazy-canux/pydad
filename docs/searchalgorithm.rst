@@ -5,10 +5,11 @@ search algorithm
 
 七大查找算法
 
-sequential search/顺序查找
---------------------------
 
-顺序查找又叫线性查找(linear search).
+linear search/线性查找
+-----------------------
+
+线性查找又叫顺序查找(sequential search).
 
 从第一个到最后一个和要查找的内容比较.
 
@@ -17,6 +18,7 @@ sequential search/顺序查找
     O(n)
 
 * 空间复杂度
+
 
 binary search/二分查找
 ----------------------
@@ -35,19 +37,24 @@ binary search/二分查找
 
 * 空间复杂度
 
-insertion search/插值查找
--------------------------
+
+interpolation search/插值查找
+-----------------------------
+
 
 fibonacci search/斐波拉切查找
 -----------------------------
+
 
 tb search/树表查找
 ------------------
 
 树表查找分为二叉树查找,2-3树查找,红黑树查找,B树和B+树查找.
 
+
 block search/分块查找
 ---------------------
+
 
 hash search/哈希查找
 --------------------
