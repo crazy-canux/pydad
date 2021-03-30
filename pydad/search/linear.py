@@ -13,10 +13,11 @@ LICENSE GNU General Public License v3.0.
 
 DESCRIPTION:
 """
+from typing import List
 
 
-def linear(seq, key):
-    """Main function for sequential search search.
+def linear(seq: List[int], key: int):
+    """Main function for linear search.
 
     :param seq: a sequence.
     :type seq: sequence.
@@ -28,4 +29,4 @@ def linear(seq, key):
     for i in range(len(seq)):
         if seq[i] == key:
             return i
-    return False
+    return None

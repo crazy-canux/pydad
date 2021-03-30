@@ -41,6 +41,16 @@ binary search/二分查找
 interpolation search/插值查找
 -----------------------------
 
+插值查找是二分查找的优化版，同样只能用于有序序列。
+
+核心是计算公式:  (key-array[min]) / (array[max] - array[min])
+
+mid = min + (max-min) * (key-array[min]) / (array[max]-array[min])
+
+* 时间复杂度
+
+* 空间复杂度
+
 
 fibonacci search/斐波拉切查找
 -----------------------------
