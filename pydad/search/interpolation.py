@@ -48,9 +48,4 @@ def interpolation(seq: List[int], key: int):
                     max = point - 1
                 else:
                     min = point + 1
-        return None
-
-
-
-
-
+    return None
