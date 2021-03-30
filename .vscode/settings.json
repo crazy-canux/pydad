@@ -1,4 +1,5 @@
 {
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
     "python.testing.unittestArgs": [
         "-v",
         "-s",
