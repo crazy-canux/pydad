@@ -26,6 +26,8 @@ def fibonacci_array(index):
 
 
 def fibonacci(index):
+    if index < 0:
+        raise ValueError("index must >= 0")
     if index == 0:
         return 0
     elif index == 1:

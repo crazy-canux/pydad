@@ -3,7 +3,7 @@ import unittest
 from pydad.search.linear import linear
 from pydad.search.binary import binary
 from pydad.search.interpolation import interpolation
-
+from pydad.search.fibonacci import fibonacci
 
 
 class SearchTestCase(unittest.TestCase):
@@ -25,6 +25,13 @@ class SearchTestCase(unittest.TestCase):
         seq = [-25, 0, 23, 82, 396]
         self.assertEqual(
             interpolation(seq, 0), 1,
+            msg='find 0 failed.'
+        )
+
+    def test_fibonacci(self):
+        seq = [-25, 0, 23, 82, 396]
+        self.assertEqual(
+            fibonacci(seq, 0), 1,
             msg='find 0 failed.'
         )
 
