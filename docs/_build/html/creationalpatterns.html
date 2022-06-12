@@ -1,26 +1,17 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>creational patterns &#8212; pydad 1.0.0.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0.0.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="behavioral patterns" href="behavioralpatterns.html" />
@@ -31,22 +22,44 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="creational-patterns">
 <span id="creationalpatterns"></span><h1>creational patterns<a class="headerlink" href="#creational-patterns" title="Permalink to this headline">¶</a></h1>
 <p>５个创建型模式</p>
+<div class="section" id="singleton-pattern">
+<h2>Singleton pattern<a class="headerlink" href="#singleton-pattern" title="Permalink to this headline">¶</a></h2>
+<p>单例模式</p>
+</div>
+<div class="section" id="simple-factory-pattern">
+<h2>Simple Factory pattern<a class="headerlink" href="#simple-factory-pattern" title="Permalink to this headline">¶</a></h2>
+<p>简单工厂模式</p>
+</div>
+<div class="section" id="abstract-factory-pattern">
+<h2>Abstract Factory pattern<a class="headerlink" href="#abstract-factory-pattern" title="Permalink to this headline">¶</a></h2>
+<p>抽象工厂模式</p>
+</div>
+<div class="section" id="builder-pattern">
+<h2>Builder pattern<a class="headerlink" href="#builder-pattern" title="Permalink to this headline">¶</a></h2>
+<p>建造者模式</p>
+</div>
+<div class="section" id="prototype-pattern">
+<h2>Prototype pattern<a class="headerlink" href="#prototype-pattern" title="Permalink to this headline">¶</a></h2>
+<p>原型模式</p>
+</div>
 </div>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -70,11 +83,18 @@
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="datastructure.html">data structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">sort algorithm/比较排序</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#id7">sort algorithm/非比较排序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html">Comparison sort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#non-comparison-sort">Non comparison sort</a></li>
 <li class="toctree-l1"><a class="reference internal" href="searchalgorithm.html">search algorithm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="designprinciple.html">design pattern principle</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">creational patterns</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">creational patterns</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#singleton-pattern">Singleton pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-factory-pattern">Simple Factory pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abstract-factory-pattern">Abstract Factory pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#builder-pattern">Builder pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prototype-pattern">Prototype pattern</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="behavioralpatterns.html">behavioral patterns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structuralpatterns.html">structural patterns</a></li>
 </ul>
@@ -89,15 +109,23 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>

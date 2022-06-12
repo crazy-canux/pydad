@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-selection.py for sort search selection.
+selection.py for selection sort.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.

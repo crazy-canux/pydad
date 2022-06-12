@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-sequential.py for search search sequential.
+linear.py for linear search.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -14,10 +13,11 @@ LICENSE GNU General Public License v3.0.
 
 DESCRIPTION:
 """
+from typing import List
 
 
-def sequential(seq, key):
-    """Main function for sequential search search.
+def linear(seq: List[int], key: int):
+    """Main function for linear search.
 
     :param seq: a sequence.
     :type seq: sequence.
@@ -29,4 +29,4 @@ def sequential(seq, key):
     for i in range(len(seq)):
         if seq[i] == key:
             return i
-    return False
+    return None

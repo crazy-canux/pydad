@@ -1,29 +1,40 @@
 import unittest
-import os
-import sys
-sys.path.insert(0, os.path.abspath(".."))
 
-from pydad.search.sequential import sequential
+from pydad.search.linear import linear
 from pydad.search.binary import binary
-
-seq1 = [23, 78, -25, 82, 0, 396]
+from pydad.search.interpolation import interpolation
+from pydad.search.fibonacci import fibonacci
 
 
 class SearchTestCase(unittest.TestCase):
-    def test_sequnetial(self):
+    def test_linear(self):
+        seq = [23, 78, -25, 82, 0, 396]
         self.assertEqual(
-            sequential(seq1, 0), 4,
+            linear(seq, 0), 4,
             msg="find 0 failed."
         )
 
     def test_binary(self):
+        seq = [-25, 0, 23, 82, 396]
         self.assertEqual(
-            binary(seq1, 0), 4,
+            binary(seq, 0), 1,
             msg="find 0 failed."
+        )
+
+    def test_interpolation(self):
+        seq = [-25, 0, 23, 82, 396]
+        self.assertEqual(
+            interpolation(seq, 0), 1,
+            msg='find 0 failed.'
+        )
+
+    def test_fibonacci(self):
+        seq = [-25, 0, 23, 82, 396]
+        self.assertEqual(
+            fibonacci(seq, 0), 1,
+            msg='find 0 failed.'
         )
 
 
 if __name__ == "__main__":
     unittest.main()
-
-

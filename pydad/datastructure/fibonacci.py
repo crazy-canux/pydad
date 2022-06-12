@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
 SUMMARY fibonacci.py
 
@@ -27,6 +26,8 @@ def fibonacci_array(index):
 
 
 def fibonacci(index):
+    if index < 0:
+        raise ValueError("index must >= 0")
     if index == 0:
         return 0
     elif index == 1:

@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-binary.py for search search binary.
+binary.py for binary search.
 
 Copyright (C) 2017 Canux CHENG.
 All rights reserved.
@@ -14,10 +13,11 @@ LICENSE GNU General Public License v3.0.
 
 DESCRIPTION:
 """
+from typing import List
 
 
-def binary(seq, key):
-    """Main function use binary search search to find the key word in a sequence.
+def binary(seq: List[int], key: int):
+    """Main function use binary search to find the key word in a sequence.
 
     :param seq: sequence can be string, tupple, list.
     :type seq: sequence.
@@ -38,4 +38,4 @@ def binary(seq, key):
             max_index = mid_index - 1
         else:
             return mid_index
-    return False
+    return None

@@ -1,26 +1,17 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data_structure Algorithm and Design_pattern &#8212; pydad 1.0.0.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0.0.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="data structure" href="datastructure.html" />
@@ -30,13 +21,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="data-structure-algorithm-and-design-pattern">
@@ -47,6 +39,15 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datastructure.html">data structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#string">String/字符串</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#vector">Vector/向量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#linked-list">Linked List/链表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#hash-table">Hash Table/哈希表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#stack">Stack/栈</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#queue">Queue/队列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#heap">Heap/堆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#tree">Tree/树</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructure.html#graph">Graph/图</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datastructure.html#fibonacci-sequence">fibonacci sequence</a></li>
 </ul>
 </li>
@@ -55,9 +56,9 @@
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#selection-sort">selection sort/选择排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#insertion-sort">insertion sort/插入排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#shell-sort">shell sort/希尔排序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#quick-sort">quick sort/快速排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#heap-sort">heap sort/堆排序</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#merge-sort">merge sort/归并排序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sortalgorithm.html#quick-sort">quick sort/快速排序</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sortalgorithm.html#non-comparison-sort">Non comparison sort</a><ul>
@@ -67,9 +68,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="searchalgorithm.html">search algorithm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#sequential-search">sequential search/顺序查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#linear-search">linear search/线性查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#binary-search">binary search/二分查找</a></li>
-<li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#insertion-search">insertion search/插值查找</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#interpolation-search">interpolation search/插值查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#fibonacci-search">fibonacci search/斐波拉切查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#tb-search">tb search/树表查找</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searchalgorithm.html#block-search">block search/分块查找</a></li>
@@ -84,7 +85,14 @@
 <li class="toctree-l2"><a class="reference internal" href="designprinciple.html#dependency-inversion-principle">dependency inversion principle</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="creationalpatterns.html">creational patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creationalpatterns.html">creational patterns</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creationalpatterns.html#singleton-pattern">Singleton pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creationalpatterns.html#simple-factory-pattern">Simple Factory pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creationalpatterns.html#abstract-factory-pattern">Abstract Factory pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creationalpatterns.html#builder-pattern">Builder pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creationalpatterns.html#prototype-pattern">Prototype pattern</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="behavioralpatterns.html">behavioral patterns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structuralpatterns.html">structural patterns</a></li>
 </ul>
@@ -93,14 +101,15 @@
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </div>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -142,15 +151,23 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
