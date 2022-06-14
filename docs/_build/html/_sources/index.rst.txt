@@ -16,6 +16,7 @@ Include 6 principle and 23 design patterns.
    :maxdepth: 2
 
    datastructure
+   algorithm
    sortalgorithm
    searchalgorithm
    designprinciple
