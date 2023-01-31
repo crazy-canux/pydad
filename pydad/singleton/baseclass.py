@@ -10,6 +10,12 @@ class Singleton(object):
         return Singleton._instance
 
 
+class MyClass(Singleton):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        print("call my init")
+        
+        
 class SingletonWithLock(object):
     _instance_lock = threading.Lock()
 
@@ -17,10 +23,10 @@ class SingletonWithLock(object):
         print("call new")
         if not hasattr(cls, '_instance'):
             print("do once")
-            with Singleton._instance_lock:
+            with SingletonWithLock._instance_lock:
                 if not hasattr(cls, '_instance'):
-                    Singleton._instance = super().__new__(cls, *args, **kwargs)
-        return Singleton._instance
+                    SingletonWithLock._instance = super().__new__(cls, *args, **kwargs)
+        return SingletonWithLock._instance
 
     def __init__(self, *args, **kwargs):
         print("call base init")
@@ -31,21 +37,15 @@ def task(arg):
     print(obj)
 
 
-class MyClass(Singleton):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        print("call my init")
-
-
 if __name__ == "__main__":
     # obj1 = MyClass()
     # obj2 = MyClass()
     # print(obj1, obj2)
 
-    obj1 = Singleton()
-    obj2 = Singleton()
-    print(obj1, obj2)
+    # obj1 = Singleton()
+    # obj2 = Singleton()
+    # print(obj1, obj2)
 
-    # for i in range(10):
-    #     t = threading.Thread(target=task, args=[i, ])
-    #     t.start()
+    for i in range(10):
+        t = threading.Thread(target=task, args=[i, ])
+        t.start()
