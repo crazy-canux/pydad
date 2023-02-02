@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>search algorithm &#8212; pydad 1.0.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="design pattern principle" href="designprinciple.html" />
@@ -32,26 +32,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="search-algorithm">
-<span id="searchalgorithm"></span><h1>search algorithm<a class="headerlink" href="#search-algorithm" title="Permalink to this headline">¶</a></h1>
-<p>七大查找算法</p>
-<div class="section" id="linear-search">
-<h2>linear search/线性查找<a class="headerlink" href="#linear-search" title="Permalink to this headline">¶</a></h2>
-<p>线性查找又叫顺序查找(sequential search).</p>
-<p>从第一个到最后一个和要查找的内容比较.</p>
+  <section id="search-algorithm">
+<span id="searchalgorithm"></span><h1>search algorithm<a class="headerlink" href="#search-algorithm" title="Permalink to this heading">¶</a></h1>
+<p class="linemarker linemarker-6">七大查找算法</p>
+<section id="linear-search">
+<h2>linear search/线性查找<a class="headerlink" href="#linear-search" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-12">线性查找又叫顺序查找(sequential search).</p>
+<p class="linemarker linemarker-14">从第一个到最后一个和要查找的内容比较.</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-16">时间复杂度</p>
 <blockquote>
-<div><p>O(n)</p>
+<div><p class="linemarker linemarker-18">O(n)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p></li>
+<li><p class="linemarker linemarker-20">空间复杂度</p></li>
 </ul>
-</div>
-<div class="section" id="binary-search">
-<h2>binary search/二分查找<a class="headerlink" href="#binary-search" title="Permalink to this headline">¶</a></h2>
-<p>二分查找又叫折半查找.只能用于有序序列。</p>
-<p>设置三个下标，min=0, max=array.length - 1, mid = (min+max)/2。
+</section>
+<section id="binary-search">
+<h2>binary search/二分查找<a class="headerlink" href="#binary-search" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-26">二分查找又叫折半查找.只能用于有序序列。</p>
+<p class="linemarker linemarker-28">设置三个下标，min=0, max=array.length - 1, mid = (min+max)/2。
 然后用要查找的关键值key和mid下标的元素比较。
 如果key比array[mid]大，那么将数组一分为二，min变为mid+1,mid重新计算。
 如果key比array[mid]小，那么数组一分为二，max变为mid-1,mid重新计算。
@@ -59,38 +59,38 @@
 如果min&gt;=max那么没有找到。
 依次类推，每次将数组一分为二。</p>
 <ul class="simple">
-<li><p>时间复杂度</p></li>
-<li><p>空间复杂度</p></li>
+<li><p class="linemarker linemarker-36">时间复杂度</p></li>
+<li><p class="linemarker linemarker-38">空间复杂度</p></li>
 </ul>
-</div>
-<div class="section" id="interpolation-search">
-<h2>interpolation search/插值查找<a class="headerlink" href="#interpolation-search" title="Permalink to this headline">¶</a></h2>
-<p>插值查找是二分查找的优化版，同样只能用于有序序列。</p>
-<p>核心是计算公式:  (key-array[min]) / (array[max] - array[min])</p>
-<p>mid = min + (max-min) * (key-array[min]) / (array[max]-array[min])</p>
+</section>
+<section id="interpolation-search">
+<h2>interpolation search/插值查找<a class="headerlink" href="#interpolation-search" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-44">插值查找是二分查找的优化版，同样只能用于有序序列。</p>
+<p class="linemarker linemarker-46">核心是计算公式:  (key-array[min]) / (array[max] - array[min])</p>
+<p class="linemarker linemarker-48">mid = min + (max-min) * (key-array[min]) / (array[max]-array[min])</p>
 <ul class="simple">
-<li><p>时间复杂度</p></li>
-<li><p>空间复杂度</p></li>
+<li><p class="linemarker linemarker-50">时间复杂度</p></li>
+<li><p class="linemarker linemarker-52">空间复杂度</p></li>
 </ul>
-</div>
-<div class="section" id="fibonacci-search">
-<h2>fibonacci search/斐波拉切查找<a class="headerlink" href="#fibonacci-search" title="Permalink to this headline">¶</a></h2>
-<p>只能用于有序序列.和插值/二分 策略一样，通过分割区间缩小范围.</p>
+</section>
+<section id="fibonacci-search">
+<h2>fibonacci search/斐波拉切查找<a class="headerlink" href="#fibonacci-search" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-58">只能用于有序序列.和插值/二分 策略一样，通过分割区间缩小范围.</p>
 <ul class="simple">
-<li><p>时间复杂度</p></li>
-<li><p>空间复杂度</p></li>
+<li><p class="linemarker linemarker-60">时间复杂度</p></li>
+<li><p class="linemarker linemarker-62">空间复杂度</p></li>
 </ul>
-</div>
-<div class="section" id="tb-search">
-<h2>tb search/树表查找<a class="headerlink" href="#tb-search" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="block-search">
-<h2>block search/分块查找<a class="headerlink" href="#block-search" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="hash-search">
-<h2>hash search/哈希查找<a class="headerlink" href="#hash-search" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+<section id="tb-search">
+<h2>tb search/树表查找<a class="headerlink" href="#tb-search" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="block-search">
+<h2>block search/分块查找<a class="headerlink" href="#block-search" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="hash-search">
+<h2>hash search/哈希查找<a class="headerlink" href="#hash-search" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
 
 
           </div>
@@ -155,7 +155,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 

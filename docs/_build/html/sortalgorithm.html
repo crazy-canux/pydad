@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>Comparison sort &#8212; pydad 1.0.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="search algorithm" href="searchalgorithm.html" />
@@ -32,201 +32,201 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="comparison-sort">
-<span id="sortalgorithm"></span><h1>Comparison sort<a class="headerlink" href="#comparison-sort" title="Permalink to this headline">¶</a></h1>
-<p>七大比较排序算法</p>
-<div class="section" id="bubble-sort">
-<h2>bubble sort/冒泡排序<a class="headerlink" href="#bubble-sort" title="Permalink to this headline">¶</a></h2>
-<p>始终是未排序的两个相邻值比较.</p>
-<p>用第0个和第1个比较，如果第0个大就交换位置…用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
+  <section id="comparison-sort">
+<span id="sortalgorithm"></span><h1>Comparison sort<a class="headerlink" href="#comparison-sort" title="Permalink to this heading">¶</a></h1>
+<p class="linemarker linemarker-7">七大比较排序算法</p>
+<section id="bubble-sort">
+<h2>bubble sort/冒泡排序<a class="headerlink" href="#bubble-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-12">始终是未排序的两个相邻值比较.</p>
+<p class="linemarker linemarker-14">用第0个和第1个比较，如果第0个大就交换位置…用倒数第二个和最后一个比较，如果倒数第二个大就交换位置。
 第一轮就是从前往后相邻的比较，最大的数就在最后一个位置。
 用第0个和第一个比较，如果第0个大就交换位置…用倒数第三个和倒数第二个比较，如果倒数第三个大就交换位置。
 第二轮就是从前到倒数第二个相邻的比较，第二大的就在倒数第二位置。
 依次类推
 …</p>
-<p>i表示比较几轮（总共比较len-1轮），j表示每次多少个相邻的数比较（每轮比较len-1-i次）。</p>
+<p class="linemarker linemarker-22">i表示比较几轮（总共比较len-1轮），j表示每次多少个相邻的数比较（每轮比较len-1-i次）。</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-24">时间复杂度</p>
 <blockquote>
-<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+<div><p class="linemarker linemarker-26">平均O(n&lt;sup&gt;2&lt;/sup&gt;)
 最好O(n)
 最差O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-30">空间复杂度</p>
 <blockquote>
-<div><p>平均O(1)</p>
+<div><p class="linemarker linemarker-32">平均O(1)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-34">稳定性</p>
 <blockquote>
-<div><p>稳定</p>
+<div><p class="linemarker linemarker-36">稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="selection-sort">
-<h2>selection sort/选择排序<a class="headerlink" href="#selection-sort" title="Permalink to this headline">¶</a></h2>
-<p>始终是假设的最值和后面未排序的值依次比较。</p>
-<p>第一轮，默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
+</section>
+<section id="selection-sort">
+<h2>selection sort/选择排序<a class="headerlink" href="#selection-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-41">始终是假设的最值和后面未排序的值依次比较。</p>
+<p class="linemarker linemarker-43">第一轮，默认下标为0的位置是最值,然后用这个位置的值和后面的依次比较,如果发现真的最值,就把这个值所在的下标设置新的最值下标.
 如果一轮比较完成，最小值下标不是0，就交换位置，将最小值放到第一。
 以此类推。
 …</p>
-<p>i表示比较几轮(len-1), j表示每轮比较的次数(len - (i+1)).</p>
+<p class="linemarker linemarker-48">i表示比较几轮(len-1), j表示每轮比较的次数(len - (i+1)).</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-50">时间复杂度</p>
 <blockquote>
-<div><p>平均O(n&lt;sup&gt;2&lt;/sup&gt;)
+<div><p class="linemarker linemarker-52">平均O(n&lt;sup&gt;2&lt;/sup&gt;)
 最好O(n&lt;sup&gt;2&lt;/sup&gt;)
 最差O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-56">空间复杂度</p>
 <blockquote>
-<div><p>O(1)</p>
+<div><p class="linemarker linemarker-58">O(1)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-60">稳定性</p>
 <blockquote>
-<div><p>不稳定</p>
+<div><p class="linemarker linemarker-62">不稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="insertion-sort">
-<h2>insertion sort/插入排序<a class="headerlink" href="#insertion-sort" title="Permalink to this headline">¶</a></h2>
-<p>插入排序，从第二个元素开始，每次和前面的序列比较，和前面的序列从后往前比较，找到合适的插入位置。</p>
+</section>
+<section id="insertion-sort">
+<h2>insertion sort/插入排序<a class="headerlink" href="#insertion-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-67">插入排序，从第二个元素开始，每次和前面的序列比较，和前面的序列从后往前比较，找到合适的插入位置。</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-69">时间复杂度</p>
 <blockquote>
-<div><p>平均 O(n&lt;sup&gt;2&lt;/sup&gt;)
+<div><p class="linemarker linemarker-71">平均 O(n&lt;sup&gt;2&lt;/sup&gt;)
 最好 O(n)
 最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-75">空间复杂度</p>
 <blockquote>
-<div><p>O(1)</p>
+<div><p class="linemarker linemarker-77">O(1)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-79">稳定性</p>
 <blockquote>
-<div><p>稳定</p>
+<div><p class="linemarker linemarker-81">稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="shell-sort">
-<h2>shell sort/希尔排序<a class="headerlink" href="#shell-sort" title="Permalink to this headline">¶</a></h2>
-<p>希尔排序是基于插入排序的，通过逐步缩小插入排序的增量实现。</p>
-<p>可以用序列长度的一半作为gap。</p>
-<p>基于经验的一组序列：</p>
-<p>Marcin Ciura’s gap sequence: gaps = [701, 301, 132, 57, 23, 10, 4, 1]</p>
-<p>例如gap=10, 就是0和10比较，1和11比较； gap=4 就是0和4比较，1和5比较。</p>
+</section>
+<section id="shell-sort">
+<h2>shell sort/希尔排序<a class="headerlink" href="#shell-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-86">希尔排序是基于插入排序的，通过逐步缩小插入排序的增量实现。</p>
+<p class="linemarker linemarker-88">可以用序列长度的一半作为gap。</p>
+<p class="linemarker linemarker-90">基于经验的一组序列：</p>
+<p class="linemarker linemarker-92">Marcin Ciura’s gap sequence: gaps = [701, 301, 132, 57, 23, 10, 4, 1]</p>
+<p class="linemarker linemarker-94">例如gap=10, 就是0和10比较，1和11比较； gap=4 就是0和4比较，1和5比较。</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-96">时间复杂度</p>
 <blockquote>
-<div><p>平均 O(nlog(n)) ~ O(n&lt;sup&gt;2&lt;/sup&gt;)
+<div><p class="linemarker linemarker-98">平均 O(nlog(n)) ~ O(n&lt;sup&gt;2&lt;/sup&gt;)
 最好 O(n&lt;sup&gt;1.3&lt;/sup&gt;)
 最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-102">空间复杂度</p>
 <blockquote>
-<div><p>O(1)</p>
+<div><p class="linemarker linemarker-104">O(1)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-106">稳定性</p>
 <blockquote>
-<div><p>不稳定</p>
+<div><p class="linemarker linemarker-108">不稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="quick-sort">
-<h2>quick sort/快速排序<a class="headerlink" href="#quick-sort" title="Permalink to this headline">¶</a></h2>
-<p>快速排序是冒泡排序的升级版,是目前速度最快的排序,采用分治策略。</p>
-<p>从数列中取一个数作为基准数，将比这个数大的数放到右边，小于等于的放到左边。
+</section>
+<section id="quick-sort">
+<h2>quick sort/快速排序<a class="headerlink" href="#quick-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-113">快速排序是冒泡排序的升级版,是目前速度最快的排序,采用分治策略。</p>
+<p class="linemarker linemarker-115">从数列中取一个数作为基准数，将比这个数大的数放到右边，小于等于的放到左边。
 再对左边和右边的做上述同样的操作，直到各个区间只有一个数。</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-118">时间复杂度</p>
 <blockquote>
-<div><p>平均 O(nlog(n))
+<div><p class="linemarker linemarker-120">平均 O(nlog(n))
 最好 O(nlog(n))
 最差 O(n&lt;sup&gt;2&lt;/sup&gt;)</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-124">空间复杂度</p>
 <blockquote>
-<div><p>O(log(n)) ~ O(n)</p>
+<div><p class="linemarker linemarker-126">O(log(n)) ~ O(n)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-128">稳定性</p>
 <blockquote>
-<div><p>不稳定</p>
+<div><p class="linemarker linemarker-130">不稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="heap-sort">
-<h2>heap sort/堆排序<a class="headerlink" href="#heap-sort" title="Permalink to this headline">¶</a></h2>
-<p>堆排序也叫二叉树排序.</p>
+</section>
+<section id="heap-sort">
+<h2>heap sort/堆排序<a class="headerlink" href="#heap-sort" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-135">堆排序也叫二叉树排序.</p>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-137">时间复杂度</p>
 <blockquote>
-<div><p>平均 O(nlog(n))
+<div><p class="linemarker linemarker-139">平均 O(nlog(n))
 最好 O(nlog(n))
 最差 O(nlog(n))</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-143">空间复杂度</p>
 <blockquote>
-<div><p>O(1)</p>
+<div><p class="linemarker linemarker-145">O(1)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-147">稳定性</p>
 <blockquote>
-<div><p>不稳定</p>
+<div><p class="linemarker linemarker-149">不稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="merge-sort">
-<h2>merge sort/归并排序<a class="headerlink" href="#merge-sort" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="merge-sort">
+<h2>merge sort/归并排序<a class="headerlink" href="#merge-sort" title="Permalink to this heading">¶</a></h2>
 <ul>
-<li><p>时间复杂度</p>
+<li><p class="linemarker linemarker-154">时间复杂度</p>
 <blockquote>
-<div><p>平均 O(nlog(n))
+<div><p class="linemarker linemarker-156">平均 O(nlog(n))
 最好 O(nlog(n))
 最差 O(nlog(n))</p>
 </div></blockquote>
 </li>
-<li><p>空间复杂度</p>
+<li><p class="linemarker linemarker-160">空间复杂度</p>
 <blockquote>
-<div><p>O(n)</p>
+<div><p class="linemarker linemarker-162">O(n)</p>
 </div></blockquote>
 </li>
-<li><p>稳定性</p>
+<li><p class="linemarker linemarker-164">稳定性</p>
 <blockquote>
-<div><p>稳定</p>
+<div><p class="linemarker linemarker-166">稳定</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="non-comparison-sort">
-<h1>Non comparison sort<a class="headerlink" href="#non-comparison-sort" title="Permalink to this headline">¶</a></h1>
-<p>基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
-<div class="section" id="radix-sort">
-<h2>radix sort/基数排序<a class="headerlink" href="#radix-sort" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="counting-sort">
-<h2>counting sort/计数排序<a class="headerlink" href="#counting-sort" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="bucket-sort">
-<h2>bucket sort/桶排序<a class="headerlink" href="#bucket-sort" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
+<section id="non-comparison-sort">
+<h1>Non comparison sort<a class="headerlink" href="#non-comparison-sort" title="Permalink to this heading">¶</a></h1>
+<p class="linemarker linemarker-173">基数排序,计数排序,桶排序三种排序都是非比较排序.</p>
+<section id="radix-sort">
+<h2>radix sort/基数排序<a class="headerlink" href="#radix-sort" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="counting-sort">
+<h2>counting sort/计数排序<a class="headerlink" href="#counting-sort" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="bucket-sort">
+<h2>bucket sort/桶排序<a class="headerlink" href="#bucket-sort" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
 
 
           </div>
@@ -296,7 +296,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
