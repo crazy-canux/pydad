@@ -18,7 +18,7 @@ Include data structure, algorithm and design pattern.
 
 Related project:
 
-<https://github.com/nryoung/algorithms>
+<https://github.com/TheAlgorithms/Python>
 
 <https://github.com/keon/algorithms>
 
