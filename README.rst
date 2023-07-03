@@ -18,11 +18,11 @@ Include data structure, algorithm and design pattern.
 
 Related project:
 
-<https://github.com/TheAlgorithms/Python>
+<https://github.com/faif/python-patterns>
 
 <https://github.com/keon/algorithms>
 
-<https://github.com/faif/python-patterns>
+<https://github.com/TheAlgorithms/Python>
 
 ============
 Contribution
