@@ -1,3 +1,1 @@
-argparse==1.2.1
-wheel==0.29.0
-wsgiref==0.1.2
+pydad @ file:///Users/canux/src/pydad
