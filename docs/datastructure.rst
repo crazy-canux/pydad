@@ -10,13 +10,13 @@ data structure
 物理结构:
 
 
-
 String/字符串
 -------------
 
 * KMP算法
 * BM模式匹配算法
 * BF算法
+
 
 Vector/向量
 ------------
@@ -27,10 +27,13 @@ Vector/向量
 Linked List/链表
 -------------------------
 
-* 双向链表/Double Linked Lists
-* 静态链表/Static List
+* 单向链表/Singly linked lists
+* 双向链表/Double linked lists
+* 循环链表/Circular linked lists
+* 静态链表/Static linked Lists
 * 对称矩阵/Symmetric Matrix
 * 稀疏矩阵/Sparse Matrix
+
 
 Hash Table/哈希表
 ------------------
@@ -40,11 +43,13 @@ Hash Table/哈希表
 * 散列函数/Hash Function
 * 填充因子/Collision Resolution
 
+
 Stack/栈
 ---------
 
 * 广义表/Generalized List
 * 双端队列/Deque
+
 
 Queue/队列
 -----------
@@ -54,6 +59,7 @@ Queue/队列
 * 双端队列
 * 优先队列
 * 循环队列
+
 
 Heap/堆
 --------
@@ -69,9 +75,9 @@ Tree/树
 * 并查集/Union-Find
 * Huffman数
 
+
 Graph/图
 ---------
-
 
 
 fibonacci sequence

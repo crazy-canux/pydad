@@ -20,16 +20,16 @@ class FibonacciTestCase(unittest.TestCase):
 
     def test_fibonacci_by_array(self):
         self.assertEqual(
-            0, fibonacci_array(0), msg="Get fib 0 failed."
+            0, fibonacci_list(0), msg="Get fib 0 failed."
         )
         self.assertEqual(
-            1, fibonacci_array(1), msg="Get fib 1 failed."
+            1, fibonacci_list(1), msg="Get fib 1 failed."
         )
         self.assertEqual(
-            1, fibonacci_array(2), msg="Get fib 2 failed."
+            1, fibonacci_list(2), msg="Get fib 2 failed."
         )
         self.assertEqual(
-            2, fibonacci_array(3), msg="Get fib 3 failed."
+            2, fibonacci_list(3), msg="Get fib 3 failed."
         )
 
 

@@ -18,20 +18,30 @@ DESCRIPTION:
 """
 
 
-def fibonacci_array(index):
+def fibonacci_list(index):
     fib_list = [0, 1]
     for _ in range(index-1):
-        fib_list.append(fib_list[-2] + fib_list[-1])
+        fib_list.append(fib_list[-1] + fib_list[-2])
     return fib_list[index]
 
 
 def fibonacci(index):
     if index < 0:
-        raise ValueError("index must >= 0")
-    if index == 0:
+         exit(0)
+    elif index == 0:
         return 0
     elif index == 1:
         return 1
     else:
-        return fibonacci(index - 2) + \
-               fibonacci(index - 1)
+        return fibonacci(index-1) + fibonacci(index-2)
+
+
+if __name__ == "__main__":
+    print(fibonacci_list(0))
+    print(fibonacci_list(1))
+    print(fibonacci_list(2))
+    print(fibonacci_list(3))
+    print(fibonacci(0))
+    print(fibonacci(1))
+    print(fibonacci(2))
+    print(fibonacci(3))
