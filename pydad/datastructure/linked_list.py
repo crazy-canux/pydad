@@ -21,7 +21,6 @@ class ListNode:
             yield curr.val
             curr = curr.next
 
-
 def list_to_linked_list(lst: list) -> ListNode:
     if not lst:
         return None
@@ -31,7 +30,6 @@ def list_to_linked_list(lst: list) -> ListNode:
         curr.next = ListNode(value)
         curr = curr.next
     return head
-
 
 def reverse(head: ListNode) -> ListNode:
     prev = None
@@ -43,7 +41,6 @@ def reverse(head: ListNode) -> ListNode:
         curr = next
     return prev
 
-
 def has_cycle(head: ListNode) -> bool:
     slow = fast = head # both move to head
     while fast and fast.next: # use fast, because fast reach the end first if not cycle list.
@@ -52,7 +49,6 @@ def has_cycle(head: ListNode) -> bool:
         if fast is slow:
             return True
     return False
-
 
 def merge_two_ordered_linked_list(list1, list2: ListNode) -> ListNode:
     dummy = ListNode(-1)
@@ -91,6 +87,44 @@ def delete_duplicate_from_linked_list(head: ListNode) -> ListNode:
         curr = curr.next
     return head
 
+def kth_to_last(head: ListNode, k: int) -> int:
+    slow = fast = head
+    for _ in range(k):
+        fast = fast.next
+    while fast:
+        fast = fast.next
+        slow = slow.next
+    return slow.val
+
+def delete_node(node: ListNode):
+    if node is None or node.next is None:
+        return
+    node.val = node.next.val
+    node.next = node.next.next
+
+# palindrome, [1,2,3,2,1]
+def is_palindrome(head: ListNode) -> bool:
+    values = []
+    curr = head
+    while head:
+        values.append(curr.val)
+        curr = curr.next
+    return values == values[::-1]
+
+def get_intersection(head_a, head_b: ListNode) -> ListNode:
+    curr_a = head_a
+    while curr_a:
+        print(curr_a)
+        curr_b = head_b
+        while curr_b:
+            print(curr_b)
+            if curr_a is curr_b: # use is instead of ==, because the node must have the same pre and next.
+                return curr_a
+            else:
+                curr_b = curr_b.next
+        curr_a = curr_a.next
+    return None
+
 
 if __name__ == "__main__":
     # head0 = ListNode(1, ListNode(2, ListNode(3, None)))
@@ -110,11 +144,14 @@ if __name__ == "__main__":
     # print(has_cycle(head3))
     # for val in head3:
     #     print(val)
-    
+
     # list1 = list_to_linked_list([1, 2, 4])
     # list2 = list_to_linked_list([1, 3, 4])
     # print(merge_two_ordered_linked_list(list1, list2))
 
     # print(delete_duplicate_from_ordered_linked_list(list_to_linked_list([1,2,2,3,4,4,5])))
 
-    print(delete_duplicate_from_linked_list(list_to_linked_list([1,2,5,3,2,1])))
+    # print(delete_duplicate_from_linked_list(list_to_linked_list([1,2,5,3,2,1])))
+
+    # print(kth_to_last(head3, 3))
+    # print(get_intersection(list_to_linked_list([4,1,8,4,5]), list_to_linked_list([5,0,1,8,4,5])))

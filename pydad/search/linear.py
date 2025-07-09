@@ -13,20 +13,23 @@ LICENSE GNU General Public License v3.0.
 
 DESCRIPTION:
 """
-from typing import List
+from typing import List, Optional
 
 
-def linear(seq: List[int], key: int):
-    """Main function for linear search.
-
-    :param seq: a sequence.
-    :type seq: sequence.
-    :param key: an element in the sequence which want to be searched.
-    :type key: char or int/float/complex.
-    :return index: the index of the key in the seq.
-    :rtype index: int.
-    """
+def linear(seq: List[int], key: int) -> Optional[int]:
     for i in range(len(seq)):
         if seq[i] == key:
             return i
     return None
+
+
+def linear_v1(seq: List[int], key: int):
+    for k, v in enumerate(seq):
+        if v == key:
+            return k
+    return None
+
+
+if __name__ == "__main__":
+    # print(linear([1,2,3], 5))
+    print(linear_v1([1,2,3,4,5], 5))

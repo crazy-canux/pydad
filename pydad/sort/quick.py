@@ -12,11 +12,12 @@ LICENSE GNU General Public License v3.0.
 :since: Wed 18 Jan 2017 02:52:27 AM EST
 
 DESCRIPTION:
+快速排序
 """
 from typing import List
 
 
-def quick_sort(seq: list) -> list:
+def quick(seq: list) -> list:
     if len(seq) < 2:
         return seq
     pivot = seq.pop()
@@ -24,4 +25,19 @@ def quick_sort(seq: list) -> list:
     lesser: List[int] = []
     for element in seq:
         (greater if element > pivot else lesser).append(element)
-    return quick_sort(lesser) + [pivot] + quick_sort(greater)
+    return quick(lesser) + [pivot] + quick(greater)
+
+def quick(seq: List[int]) -> List[int]:
+    """Main function for quick sort.
+
+    :param seq: a sequence can be string, tupple, list.
+    :type seq: sequence.
+    :return seq: return a sequence after sort.
+    :rtype seq: sequence.
+    """
+    if len(seq) < 2:
+        return seq
+    pivot = seq.pop()
+    greater = [x for x in seq if x > pivot]
+    lesser = [x for x in seq if x <= pivot]
+    return quick(lesser) + [pivot] + quick(greater)

@@ -13,19 +13,26 @@ LICENSE GNU General Public License v3.0.
 
 DESCRIPTION:
 """
+from typing import List
 
 
-def bubble_sort(seq):
-    """Main function for bubble sort from min to max.
-
-    :param seq: include string/tupple/list.
-    :type seq: sequence.
-    :return seq: return the result after bubble sort.
-    :rtype: sequence.
-    """
+def bubble(seq: List[int]) -> List[int]:
     length = len(seq)
     for i in range(length - 1):
         for j in range(length - 1 - i):
             if seq[j] > seq[j+1]:
                 seq[j], seq[j+1] = seq[j+1], seq[j]
     return seq
+
+
+def bubble_v1(seq: List[int]) -> List[int]:
+    for i in range(len(seq)-1):
+        for j in range(len(seq)-1-i):
+            if seq[j] > seq[j+1]:
+                seq[j], seq[j+1] = seq[j+1], seq[j]
+    return seq
+
+
+if __name__ == "__main__":
+    print(bubble([3,6,1,9, 2]))
+    print(bubble_v1([2,6,3,1,9,4]))
