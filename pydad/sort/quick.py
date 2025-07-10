@@ -27,17 +27,15 @@ def quick(seq: list) -> list:
         (greater if element > pivot else lesser).append(element)
     return quick(lesser) + [pivot] + quick(greater)
 
-def quick(seq: List[int]) -> List[int]:
-    """Main function for quick sort.
-
-    :param seq: a sequence can be string, tupple, list.
-    :type seq: sequence.
-    :return seq: return a sequence after sort.
-    :rtype seq: sequence.
-    """
+def quick_v2(seq: List[int]) -> List[int]:
     if len(seq) < 2:
         return seq
     pivot = seq.pop()
     greater = [x for x in seq if x > pivot]
     lesser = [x for x in seq if x <= pivot]
     return quick(lesser) + [pivot] + quick(greater)
+
+
+if __name__ == "__main__":
+    print(quick([3, 6, 8, 10, 1, 2, 1]))
+    print(quick_v2([3, 6, 8, 10, 1, 2, 1]))
