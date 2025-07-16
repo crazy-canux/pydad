@@ -6,18 +6,18 @@ Algorithm
 对数
 ----
 
-loga^b = x => a^x = b
+log a^b = x => a^x = b
 
-loga^(mn) = loga^m + loga^n
+log a^(mn) = log a^m + log a^n
 
-loga^(m/n) = loga^m - loga^n
+log a^(m/n) = log a^m - log a^n
 
-loga^(M^n) = nloga^M
+log a^(M^n) = n log a^M
 
-loga^b = logc^b / logc^a
+log a^b = log c^b / log c^a
 
-ln    e为底
-lg    10为底
+ln    e为底(log e^)
+lg    10为底(log 10^)
 log    任意底
 
 时间复杂度
@@ -27,7 +27,7 @@ log    任意底
 
 常见时间复杂度从小到大排列:
 1. O(1) 常数阶
-2. O(logn) 对数阶
+2. O(log n) 对数阶
 3. O(n) 线性阶
 4. O(nlogn) 线性对数阶
 5. O(n^2) 平方阶
@@ -46,6 +46,8 @@ log    任意底
 1. O(1)
 2. O(n)
 3. O(n^2)
+
+***
 
 递归
 -----

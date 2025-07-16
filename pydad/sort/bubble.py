@@ -12,6 +12,8 @@ LICENSE GNU General Public License v3.0.
 :since: Wed 18 Jan 2017 02:52:27 AM EST
 
 DESCRIPTION:
+time: O(n^2)
+space: O(1)
 """
 from typing import List
 
@@ -23,7 +25,6 @@ def bubble(seq: List[int]) -> List[int]:
             if seq[j] > seq[j+1]:
                 seq[j], seq[j+1] = seq[j+1], seq[j]
     return seq
-
 
 def bubble_v1(seq: List[int]) -> List[int]:
     for i in range(len(seq)-1):

@@ -12,5 +12,6 @@ LICENSE GNU General Public License v3.0.
 :since: Wed 18 Jan 2021 01:02:49 AM EST
 
 DESCRIPTION:
-归并排序
+time: O(n log n)
+space: O(n)
 """

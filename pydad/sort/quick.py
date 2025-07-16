@@ -12,7 +12,9 @@ LICENSE GNU General Public License v3.0.
 :since: Wed 18 Jan 2017 02:52:27 AM EST
 
 DESCRIPTION:
-快速排序
+time: O(n log n)
+space: O(log n)
+
 """
 from typing import List
 

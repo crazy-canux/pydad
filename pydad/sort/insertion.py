@@ -12,8 +12,9 @@ LICENSE GNU General Public License v3.0.
 :since: Wed 18 Jan 2017 01:02:49 AM EST
 
 DESCRIPTION:
+time: O(n^2)
+space: O(1)
 """
-
 
 def insertion_sort(seq: list) -> list:
     for insert_index, insert_value in enumerate(seq[1:]):

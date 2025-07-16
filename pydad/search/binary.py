@@ -12,7 +12,7 @@ LICENSE GNU General Public License v3.0.
 :since: Fri 20 Jan 2017 01:10:07 AM EST
 
 DESCRIPTION:
-二分查找
+time: O(log n)
 """
 from typing import List
 
