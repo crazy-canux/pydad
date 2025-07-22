@@ -86,7 +86,7 @@ def post_order(node: TreeNode) -> List[int]:
 
 # 层序遍历(BFS)，从上往下，从左往右
 # Queue: FIFO
-def level_order_v1(node: TreeNode):
+def level_order_v1(node: TreeNode):        
     queue = deque([node])
     while queue:
         curr = queue.popleft()
@@ -97,6 +97,8 @@ def level_order_v1(node: TreeNode):
             queue.append(curr.right)
             
 def level_order(node: TreeNode) -> List[int]:
+    if not node:  # deque([]) is not None
+        return []
     queue = deque([node])
     result = []
     while queue:
@@ -112,6 +114,39 @@ def level_order(node: TreeNode) -> List[int]:
 
 # morris遍历
 
+#######################################
+# 二叉树最大深度
+def max_depth(node: TreeNode) -> int:
+    if not node:
+        return 0
+    return max(max_depth(node.left), max_depth(node.right)) + 1
+
+# 二叉树最小深度，如果一边没有就不能算。
+def min_depth(node: TreeNode) -> int:
+    if not node:
+        return 0
+    if not node.left:
+        return min_depth(node.right) + 1
+    if not node.right:
+        return min_depth(node.left) + 1
+    return min(min_depth(node.left), min_depth(node.right)) + 1
+
+# 路径总和问题，根节点到叶子节点路径上节点总和=给定值
+def has_path_sum(node: TreeNode, target: int) -> bool:
+    if not node:
+        return False
+    if not node.left and not node.right:
+        return node.value == target
+    return (
+        has_path_sum(node.left, target-node.value) or 
+        has_path_sum(node.right, target-node.value)
+    )
+
+# 根据中序+前序/后序 构造二叉树
+
+# 二叉树最大路径和
+
+#######################################
 # 两棵树是否相同
 def is_same_tree(node1, node2: TreeNode) -> bool:
     if not node1 and not node2:
@@ -122,7 +157,6 @@ def is_same_tree(node1, node2: TreeNode) -> bool:
         return False
     return is_same_tree(node1.left, node2.left) and is_same_tree(node1.right, node2.right)
 
-#######################################
 # 对称二叉树
 def is_symmetric(node: TreeNode) -> bool:
     if not node:
@@ -137,24 +171,29 @@ def is_symmetric(node: TreeNode) -> bool:
         return mirror(left.left, right.right) & mirror(left.right, right.left)
     return mirror(node.left, node.right)
 
-# 二叉树最大深度
+# 满二叉树判断
+def is_full_tree(node: TreeNode) -> bool:
+    if not node:
+        return True
+    if not node.left and not node.right:
+        return True
+    if not node.left or not node.right:
+        return False
+    return is_full_tree(node.left) and is_full_tree(node.right)
 
-# 二叉树最小深度
+# 完全二叉树判断：难
+def is_complete_tree(node: TreeNode) -> bool:
+    pass
 
-# 平衡二叉树判断
-
-# 路经总和
-
-# 所有路径等于目标值
-
-# 所有根到叶路径
-
-# 根据中序+前序/后序 构造二叉树
-
-# 二叉树最大路径和
+# 平衡二叉树判断：难
+def is_balanced_tree(node: TreeNode) -> bool:
+    pass
 
 #######################################
 # 二叉树搜索合法性
+# Binary Search Tree
+def is_valid_bst(node: TreeNode) -> bool:
+    pass
 
 # 在二叉搜索树BST中插入/删除节点
 
@@ -174,6 +213,10 @@ if __name__ == "__main__":
     root1.left = TreeNode(3, None, TreeNode(6))
     root1.right = TreeNode(2, TreeNode(4), TreeNode(5))
     
+    root2 = TreeNode(1)
+    root2.left = TreeNode(2, TreeNode(3), TreeNode(4))
+    root2.right = TreeNode(2, TreeNode(4), TreeNode(3))
+    
     # 1,2,4,5,3,6
     # pre_order_v1(root)
     # pre_order_v2(root)
@@ -190,13 +233,13 @@ if __name__ == "__main__":
     # print(post_order(root))
     
     #1, 2, 3, 4,5,6
-    # level_order_v1(root)
+    # level_order_v1(None)
     # print(level_order(root))
+    
+    # print(max_depth(root))
+    print(min_depth(root))
     
     # print(is_same_tree(root, root))
     # print(is_same_tree(root, root1))
-    
-    # root2 = TreeNode(1)
-    # root2.left = TreeNode(2, TreeNode(3), TreeNode(4))
-    # root2.right = TreeNode(2, TreeNode(4), TreeNode(3))
     # print(is_symmetric(root2))
+    # print(is_full_tree(root2))

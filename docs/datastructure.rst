@@ -97,7 +97,7 @@ root：根节点
 
 后序遍历：left -> right -> root
 
-层序遍历BFS：从上到下，从左到右。
+层序遍历BFS（Breadth First Search）：从上到下，从左到右。
 
 * 满二叉树FBT
 
@@ -111,15 +111,19 @@ Complete Binary Tree.
 
 除最后一层，其它层节点都填满，最后一层节点都是靠左对齐（从左开始填充）。
 
+* 平衡二叉树BBT
+
+Balanced Binary Tree.
+
+任意节点的左右子树高度差不超过1.
+
 * 二叉搜索树BST
 
 Binary Search Tree.
 
 左子树所有值 < 当前节点值 <  右子树所有值
 
-* 平衡二叉搜索树
-
-左右子树高度差<=1
+平衡二叉搜索树： BST+BBT。
 
 ***
 
