@@ -17,7 +17,6 @@ DESCRIPTION:
     f(n) = f(n-2) + f(n-1) (n>=2)
 """
 
-
 def fibonacci_list(index):
     fib_list = [0, 1]
     for _ in range(index-1):

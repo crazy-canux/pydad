@@ -38,9 +38,9 @@ def reverse(head: ListNode) -> ListNode:
     curr = head
     while curr != None:
         next = curr.next
-        curr.next = prev
-        prev = curr
-        curr = next
+        curr.next = prev # point to front.
+        prev = curr # move to next
+        curr = next # move to next
     return prev
 
 # 判断链表是否有环

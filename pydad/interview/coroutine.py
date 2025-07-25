@@ -37,8 +37,8 @@ async def main():
         for i in range(NUM_GPU)
     ]
     await producer(queue, 10)
-    await queue.join()
     await asyncio.gather(*consumer_tasks)
+    await queue.join()
     print("All done")
 
 if __name__ == "__main__":

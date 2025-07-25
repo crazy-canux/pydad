@@ -1,4 +1,4 @@
-from multiprocessing import Process, Queue, current_process
+from multiprocessing import Process, Queue
 import time, math, random
 
 NUM_CPU = 3
@@ -41,8 +41,8 @@ if __name__ == "__main__":
     # producer(queue, NUM_TASK)
     producer_process = Process(target=producer, args=(queue, NUM_TASK))
     producer_process.start()
-    producer_process.join()
     
+    producer_process.join()
     for p in consumer_process:
         p.join()
         
