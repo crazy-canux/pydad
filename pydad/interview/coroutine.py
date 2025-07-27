@@ -36,7 +36,7 @@ async def main():
         asyncio.create_task(consumer(queue, i))
         for i in range(NUM_GPU)
     ]
-    await producer(queue, 10)
+    await producer(queue, NUM_TASK)
     await asyncio.gather(*consumer_tasks)
     await queue.join()
     print("All done")
