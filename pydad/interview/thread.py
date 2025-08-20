@@ -1,6 +1,6 @@
-from threading import Thread, Lock, BoundedSemaphore
+from threading import Thread
 from queue import Queue
-import time, math, random
+import time, random
 
 task_queue = Queue()
 GPU_NUM=2
